@@ -13,7 +13,7 @@ impl From<crate::R<MATCH_SPEC>> for R {
         R(reader)
     }
 }
-#[doc = "Field `MATCH` reader - Which of the addresses in {ADDRESS} matched the incoming address"]
+#[doc = "Field `MATCH` reader - Indication of which address in {ADDRESS} that matched the incoming address"]
 pub struct MATCH_R(crate::FieldReader<bool, bool>);
 impl MATCH_R {
     #[inline(always)]
@@ -29,7 +29,7 @@ impl core::ops::Deref for MATCH_R {
     }
 }
 impl R {
-    #[doc = "Bit 0 - Which of the addresses in {ADDRESS} matched the incoming address"]
+    #[doc = "Bit 0 - Indication of which address in {ADDRESS} that matched the incoming address"]
     #[inline(always)]
     pub fn match_(&self) -> MATCH_R {
         MATCH_R::new((self.bits & 0x01) != 0)

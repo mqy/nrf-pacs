@@ -29,9 +29,9 @@ pub struct RegisterBlock {
 #[doc = r"Register block"]
 #[repr(C)]
 pub struct ACL {
-    #[doc = "0x00 - Description cluster: Configure the word-aligned start address of region n to protect"]
+    #[doc = "0x00 - Description cluster: Start address of region to protect. The start address must be word-aligned."]
     pub addr: crate::Reg<self::acl::addr::ADDR_SPEC>,
-    #[doc = "0x04 - Description cluster: Size of region to protect counting from address ACL\\[n\\].ADDR. Write '0' as no effect."]
+    #[doc = "0x04 - Description cluster: Size of region to protect counting from address ACL\\[n\\].ADDR. Writing a '0' has no effect."]
     pub size: crate::Reg<self::acl::size::SIZE_SPEC>,
     #[doc = "0x08 - Description cluster: Access permissions for region n as defined by start address ACL\\[n\\].ADDR and size ACL\\[n\\].SIZE"]
     pub perm: crate::Reg<self::acl::perm::PERM_SPEC>,

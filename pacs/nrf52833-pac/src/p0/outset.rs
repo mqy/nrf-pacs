@@ -84,7 +84,7 @@ impl core::ops::Deref for PIN0_R {
 #[doc = "Pin 0\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN0_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN0_AW> for bool {
@@ -103,7 +103,7 @@ impl<'a> PIN0_W<'a> {
     pub fn variant(self, variant: PIN0_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN0_AW::SET)
@@ -175,7 +175,7 @@ impl core::ops::Deref for PIN1_R {
 #[doc = "Pin 1\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN1_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN1_AW> for bool {
@@ -194,7 +194,7 @@ impl<'a> PIN1_W<'a> {
     pub fn variant(self, variant: PIN1_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN1_AW::SET)
@@ -266,7 +266,7 @@ impl core::ops::Deref for PIN2_R {
 #[doc = "Pin 2\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN2_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN2_AW> for bool {
@@ -285,7 +285,7 @@ impl<'a> PIN2_W<'a> {
     pub fn variant(self, variant: PIN2_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN2_AW::SET)
@@ -357,7 +357,7 @@ impl core::ops::Deref for PIN3_R {
 #[doc = "Pin 3\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN3_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN3_AW> for bool {
@@ -376,7 +376,7 @@ impl<'a> PIN3_W<'a> {
     pub fn variant(self, variant: PIN3_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN3_AW::SET)
@@ -448,7 +448,7 @@ impl core::ops::Deref for PIN4_R {
 #[doc = "Pin 4\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN4_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN4_AW> for bool {
@@ -467,7 +467,7 @@ impl<'a> PIN4_W<'a> {
     pub fn variant(self, variant: PIN4_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN4_AW::SET)
@@ -539,7 +539,7 @@ impl core::ops::Deref for PIN5_R {
 #[doc = "Pin 5\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN5_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN5_AW> for bool {
@@ -558,7 +558,7 @@ impl<'a> PIN5_W<'a> {
     pub fn variant(self, variant: PIN5_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN5_AW::SET)
@@ -630,7 +630,7 @@ impl core::ops::Deref for PIN6_R {
 #[doc = "Pin 6\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN6_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN6_AW> for bool {
@@ -649,7 +649,7 @@ impl<'a> PIN6_W<'a> {
     pub fn variant(self, variant: PIN6_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN6_AW::SET)
@@ -721,7 +721,7 @@ impl core::ops::Deref for PIN7_R {
 #[doc = "Pin 7\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN7_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN7_AW> for bool {
@@ -740,7 +740,7 @@ impl<'a> PIN7_W<'a> {
     pub fn variant(self, variant: PIN7_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN7_AW::SET)
@@ -812,7 +812,7 @@ impl core::ops::Deref for PIN8_R {
 #[doc = "Pin 8\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN8_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN8_AW> for bool {
@@ -831,7 +831,7 @@ impl<'a> PIN8_W<'a> {
     pub fn variant(self, variant: PIN8_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN8_AW::SET)
@@ -903,7 +903,7 @@ impl core::ops::Deref for PIN9_R {
 #[doc = "Pin 9\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN9_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN9_AW> for bool {
@@ -922,7 +922,7 @@ impl<'a> PIN9_W<'a> {
     pub fn variant(self, variant: PIN9_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN9_AW::SET)
@@ -994,7 +994,7 @@ impl core::ops::Deref for PIN10_R {
 #[doc = "Pin 10\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN10_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN10_AW> for bool {
@@ -1013,7 +1013,7 @@ impl<'a> PIN10_W<'a> {
     pub fn variant(self, variant: PIN10_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN10_AW::SET)
@@ -1085,7 +1085,7 @@ impl core::ops::Deref for PIN11_R {
 #[doc = "Pin 11\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN11_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN11_AW> for bool {
@@ -1104,7 +1104,7 @@ impl<'a> PIN11_W<'a> {
     pub fn variant(self, variant: PIN11_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN11_AW::SET)
@@ -1176,7 +1176,7 @@ impl core::ops::Deref for PIN12_R {
 #[doc = "Pin 12\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN12_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN12_AW> for bool {
@@ -1195,7 +1195,7 @@ impl<'a> PIN12_W<'a> {
     pub fn variant(self, variant: PIN12_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN12_AW::SET)
@@ -1267,7 +1267,7 @@ impl core::ops::Deref for PIN13_R {
 #[doc = "Pin 13\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN13_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN13_AW> for bool {
@@ -1286,7 +1286,7 @@ impl<'a> PIN13_W<'a> {
     pub fn variant(self, variant: PIN13_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN13_AW::SET)
@@ -1358,7 +1358,7 @@ impl core::ops::Deref for PIN14_R {
 #[doc = "Pin 14\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN14_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN14_AW> for bool {
@@ -1377,7 +1377,7 @@ impl<'a> PIN14_W<'a> {
     pub fn variant(self, variant: PIN14_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN14_AW::SET)
@@ -1449,7 +1449,7 @@ impl core::ops::Deref for PIN15_R {
 #[doc = "Pin 15\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN15_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN15_AW> for bool {
@@ -1468,7 +1468,7 @@ impl<'a> PIN15_W<'a> {
     pub fn variant(self, variant: PIN15_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN15_AW::SET)
@@ -1540,7 +1540,7 @@ impl core::ops::Deref for PIN16_R {
 #[doc = "Pin 16\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN16_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN16_AW> for bool {
@@ -1559,7 +1559,7 @@ impl<'a> PIN16_W<'a> {
     pub fn variant(self, variant: PIN16_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN16_AW::SET)
@@ -1631,7 +1631,7 @@ impl core::ops::Deref for PIN17_R {
 #[doc = "Pin 17\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN17_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN17_AW> for bool {
@@ -1650,7 +1650,7 @@ impl<'a> PIN17_W<'a> {
     pub fn variant(self, variant: PIN17_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN17_AW::SET)
@@ -1722,7 +1722,7 @@ impl core::ops::Deref for PIN18_R {
 #[doc = "Pin 18\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN18_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN18_AW> for bool {
@@ -1741,7 +1741,7 @@ impl<'a> PIN18_W<'a> {
     pub fn variant(self, variant: PIN18_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN18_AW::SET)
@@ -1813,7 +1813,7 @@ impl core::ops::Deref for PIN19_R {
 #[doc = "Pin 19\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN19_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN19_AW> for bool {
@@ -1832,7 +1832,7 @@ impl<'a> PIN19_W<'a> {
     pub fn variant(self, variant: PIN19_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN19_AW::SET)
@@ -1904,7 +1904,7 @@ impl core::ops::Deref for PIN20_R {
 #[doc = "Pin 20\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN20_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN20_AW> for bool {
@@ -1923,7 +1923,7 @@ impl<'a> PIN20_W<'a> {
     pub fn variant(self, variant: PIN20_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN20_AW::SET)
@@ -1995,7 +1995,7 @@ impl core::ops::Deref for PIN21_R {
 #[doc = "Pin 21\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN21_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN21_AW> for bool {
@@ -2014,7 +2014,7 @@ impl<'a> PIN21_W<'a> {
     pub fn variant(self, variant: PIN21_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN21_AW::SET)
@@ -2086,7 +2086,7 @@ impl core::ops::Deref for PIN22_R {
 #[doc = "Pin 22\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN22_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN22_AW> for bool {
@@ -2105,7 +2105,7 @@ impl<'a> PIN22_W<'a> {
     pub fn variant(self, variant: PIN22_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN22_AW::SET)
@@ -2177,7 +2177,7 @@ impl core::ops::Deref for PIN23_R {
 #[doc = "Pin 23\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN23_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN23_AW> for bool {
@@ -2196,7 +2196,7 @@ impl<'a> PIN23_W<'a> {
     pub fn variant(self, variant: PIN23_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN23_AW::SET)
@@ -2268,7 +2268,7 @@ impl core::ops::Deref for PIN24_R {
 #[doc = "Pin 24\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN24_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN24_AW> for bool {
@@ -2287,7 +2287,7 @@ impl<'a> PIN24_W<'a> {
     pub fn variant(self, variant: PIN24_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN24_AW::SET)
@@ -2359,7 +2359,7 @@ impl core::ops::Deref for PIN25_R {
 #[doc = "Pin 25\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN25_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN25_AW> for bool {
@@ -2378,7 +2378,7 @@ impl<'a> PIN25_W<'a> {
     pub fn variant(self, variant: PIN25_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN25_AW::SET)
@@ -2450,7 +2450,7 @@ impl core::ops::Deref for PIN26_R {
 #[doc = "Pin 26\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN26_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN26_AW> for bool {
@@ -2469,7 +2469,7 @@ impl<'a> PIN26_W<'a> {
     pub fn variant(self, variant: PIN26_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN26_AW::SET)
@@ -2541,7 +2541,7 @@ impl core::ops::Deref for PIN27_R {
 #[doc = "Pin 27\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN27_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN27_AW> for bool {
@@ -2560,7 +2560,7 @@ impl<'a> PIN27_W<'a> {
     pub fn variant(self, variant: PIN27_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN27_AW::SET)
@@ -2632,7 +2632,7 @@ impl core::ops::Deref for PIN28_R {
 #[doc = "Pin 28\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN28_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN28_AW> for bool {
@@ -2651,7 +2651,7 @@ impl<'a> PIN28_W<'a> {
     pub fn variant(self, variant: PIN28_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN28_AW::SET)
@@ -2723,7 +2723,7 @@ impl core::ops::Deref for PIN29_R {
 #[doc = "Pin 29\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN29_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN29_AW> for bool {
@@ -2742,7 +2742,7 @@ impl<'a> PIN29_W<'a> {
     pub fn variant(self, variant: PIN29_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN29_AW::SET)
@@ -2814,7 +2814,7 @@ impl core::ops::Deref for PIN30_R {
 #[doc = "Pin 30\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN30_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN30_AW> for bool {
@@ -2833,7 +2833,7 @@ impl<'a> PIN30_W<'a> {
     pub fn variant(self, variant: PIN30_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN30_AW::SET)
@@ -2905,7 +2905,7 @@ impl core::ops::Deref for PIN31_R {
 #[doc = "Pin 31\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PIN31_AW {
-    #[doc = "1: Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "1: Write: a '1' sets the pin high; a '0' has no effect"]
     SET = 1,
 }
 impl From<PIN31_AW> for bool {
@@ -2924,7 +2924,7 @@ impl<'a> PIN31_W<'a> {
     pub fn variant(self, variant: PIN31_AW) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Write: writing a '1' sets the pin high; writing a '0' has no effect"]
+    #[doc = "Write: a '1' sets the pin high; a '0' has no effect"]
     #[inline(always)]
     pub fn set(self) -> &'a mut W {
         self.variant(PIN31_AW::SET)

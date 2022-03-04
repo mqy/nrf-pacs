@@ -308,6 +308,34 @@ impl core::fmt::Debug for UICR {
 }
 #[doc = "User information configuration registers"]
 pub mod uicr;
+#[doc = "Access Port Protection"]
+pub struct APPROTECT {
+    _marker: PhantomData<*const ()>,
+}
+unsafe impl Send for APPROTECT {}
+impl APPROTECT {
+    #[doc = r"Pointer to the register block"]
+    pub const PTR: *const approtect::RegisterBlock = 0x4000_0000 as *const _;
+    #[doc = r"Return the pointer to the register block"]
+    #[inline(always)]
+    pub const fn ptr() -> *const approtect::RegisterBlock {
+        Self::PTR
+    }
+}
+impl Deref for APPROTECT {
+    type Target = approtect::RegisterBlock;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        unsafe { &*Self::PTR }
+    }
+}
+impl core::fmt::Debug for APPROTECT {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("APPROTECT").finish()
+    }
+}
+#[doc = "Access Port Protection"]
+pub mod approtect;
 #[doc = "Clock control"]
 pub struct CLOCK {
     _marker: PhantomData<*const ()>,
@@ -1148,7 +1176,7 @@ impl core::fmt::Debug for AAR {
 }
 #[doc = "Accelerated Address Resolver"]
 pub mod aar;
-#[doc = "AES CCM Mode Encryption"]
+#[doc = "AES CCM mode encryption"]
 pub struct CCM {
     _marker: PhantomData<*const ()>,
 }
@@ -1174,7 +1202,7 @@ impl core::fmt::Debug for CCM {
         f.debug_struct("CCM").finish()
     }
 }
-#[doc = "AES CCM Mode Encryption"]
+#[doc = "AES CCM mode encryption"]
 pub mod ccm;
 #[doc = "Watchdog Timer"]
 pub struct WDT {
@@ -2193,6 +2221,8 @@ pub struct Peripherals {
     pub FICR: FICR,
     #[doc = "UICR"]
     pub UICR: UICR,
+    #[doc = "APPROTECT"]
+    pub APPROTECT: APPROTECT,
     #[doc = "CLOCK"]
     pub CLOCK: CLOCK,
     #[doc = "POWER"]
@@ -2349,6 +2379,9 @@ impl Peripherals {
                 _marker: PhantomData,
             },
             UICR: UICR {
+                _marker: PhantomData,
+            },
+            APPROTECT: APPROTECT {
                 _marker: PhantomData,
             },
             CLOCK: CLOCK {

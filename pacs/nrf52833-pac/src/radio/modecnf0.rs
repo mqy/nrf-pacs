@@ -39,7 +39,7 @@ impl From<crate::W<MODECNF0_SPEC>> for W {
 pub enum RU_A {
     #[doc = "0: Default ramp-up time (tRXEN and tTXEN), compatible with firmware written for nRF51"]
     DEFAULT = 0,
-    #[doc = "1: Fast ramp-up (tRXEN,FAST and tTXEN,FAST), see electrical specification for more information"]
+    #[doc = "1: Fast ramp-up (tRXEN,FAST and tTXEN,FAST), see electrical specifications for more information"]
     FAST = 1,
 }
 impl From<RU_A> for bool {
@@ -96,7 +96,7 @@ impl<'a> RU_W<'a> {
     pub fn default(self) -> &'a mut W {
         self.variant(RU_A::DEFAULT)
     }
-    #[doc = "Fast ramp-up (tRXEN,FAST and tTXEN,FAST), see electrical specification for more information"]
+    #[doc = "Fast ramp-up (tRXEN,FAST and tTXEN,FAST), see electrical specifications for more information"]
     #[inline(always)]
     pub fn fast(self) -> &'a mut W {
         self.variant(RU_A::FAST)

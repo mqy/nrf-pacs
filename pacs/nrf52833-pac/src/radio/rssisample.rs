@@ -13,7 +13,7 @@ impl From<crate::R<RSSISAMPLE_SPEC>> for R {
         R(reader)
     }
 }
-#[doc = "Field `RSSISAMPLE` reader - RSSI sample"]
+#[doc = "Field `RSSISAMPLE` reader - RSSI sample."]
 pub struct RSSISAMPLE_R(crate::FieldReader<u8, u8>);
 impl RSSISAMPLE_R {
     #[inline(always)]
@@ -29,7 +29,7 @@ impl core::ops::Deref for RSSISAMPLE_R {
     }
 }
 impl R {
-    #[doc = "Bits 0:6 - RSSI sample"]
+    #[doc = "Bits 0:6 - RSSI sample."]
     #[inline(always)]
     pub fn rssisample(&self) -> RSSISAMPLE_R {
         RSSISAMPLE_R::new((self.bits & 0x7f) as u8)

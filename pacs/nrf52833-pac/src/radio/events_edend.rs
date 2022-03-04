@@ -34,7 +34,7 @@ impl From<crate::W<EVENTS_EDEND_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Sampling of energy detection complete. A new ED sample is ready for readout from the RADIO.EDSAMPLE register\n\nValue on reset: 0"]
+#[doc = "Sampling of energy detection complete. A new ED sample is ready for readout from the RADIO.EDSAMPLE register.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum EVENTS_EDEND_A {
     #[doc = "0: Event not generated"]
@@ -48,7 +48,7 @@ impl From<EVENTS_EDEND_A> for bool {
         variant as u8 != 0
     }
 }
-#[doc = "Field `EVENTS_EDEND` reader - Sampling of energy detection complete. A new ED sample is ready for readout from the RADIO.EDSAMPLE register"]
+#[doc = "Field `EVENTS_EDEND` reader - Sampling of energy detection complete. A new ED sample is ready for readout from the RADIO.EDSAMPLE register."]
 pub struct EVENTS_EDEND_R(crate::FieldReader<bool, EVENTS_EDEND_A>);
 impl EVENTS_EDEND_R {
     #[inline(always)]
@@ -81,7 +81,7 @@ impl core::ops::Deref for EVENTS_EDEND_R {
         &self.0
     }
 }
-#[doc = "Field `EVENTS_EDEND` writer - Sampling of energy detection complete. A new ED sample is ready for readout from the RADIO.EDSAMPLE register"]
+#[doc = "Field `EVENTS_EDEND` writer - Sampling of energy detection complete. A new ED sample is ready for readout from the RADIO.EDSAMPLE register."]
 pub struct EVENTS_EDEND_W<'a> {
     w: &'a mut W,
 }
@@ -119,14 +119,14 @@ impl<'a> EVENTS_EDEND_W<'a> {
     }
 }
 impl R {
-    #[doc = "Bit 0 - Sampling of energy detection complete. A new ED sample is ready for readout from the RADIO.EDSAMPLE register"]
+    #[doc = "Bit 0 - Sampling of energy detection complete. A new ED sample is ready for readout from the RADIO.EDSAMPLE register."]
     #[inline(always)]
     pub fn events_edend(&self) -> EVENTS_EDEND_R {
         EVENTS_EDEND_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
-    #[doc = "Bit 0 - Sampling of energy detection complete. A new ED sample is ready for readout from the RADIO.EDSAMPLE register"]
+    #[doc = "Bit 0 - Sampling of energy detection complete. A new ED sample is ready for readout from the RADIO.EDSAMPLE register."]
     #[inline(always)]
     pub fn events_edend(&mut self) -> EVENTS_EDEND_W {
         EVENTS_EDEND_W { w: self }
@@ -138,7 +138,7 @@ impl W {
         self
     }
 }
-#[doc = "Sampling of energy detection complete. A new ED sample is ready for readout from the RADIO.EDSAMPLE register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [events_edend](index.html) module"]
+#[doc = "Sampling of energy detection complete. A new ED sample is ready for readout from the RADIO.EDSAMPLE register.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [events_edend](index.html) module"]
 pub struct EVENTS_EDEND_SPEC;
 impl crate::RegisterSpec for EVENTS_EDEND_SPEC {
     type Ux = u32;

@@ -17,11 +17,11 @@ impl From<crate::R<PACKAGE_SPEC>> for R {
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u32)]
 pub enum PACKAGE_A {
-    #[doc = "8199: QDxx - 40-pin QFN"]
+    #[doc = "8199: QDxx - 5x5 40-pin QFN"]
     QD = 8199,
-    #[doc = "8196: QIxx - 73-pin aQFN"]
+    #[doc = "8196: QIxx - 7x7 73-pin aQFN"]
     QI = 8196,
-    #[doc = "8200: CJxx - WLCSP"]
+    #[doc = "8200: CJxx - 3.175 x 3.175 WLCSP"]
     CJ = 8200,
     #[doc = "4294967295: Unspecified"]
     UNSPECIFIED = 4294967295,

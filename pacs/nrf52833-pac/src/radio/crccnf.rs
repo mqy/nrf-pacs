@@ -34,7 +34,7 @@ impl From<crate::W<CRCCNF_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "CRC length in number of bytes.\n\nValue on reset: 0"]
+#[doc = "CRC length in number of bytes For MODE Ble_LR125Kbit and Ble_LR500Kbit, only LEN set to 3 is supported\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum LEN_A {
@@ -53,7 +53,7 @@ impl From<LEN_A> for u8 {
         variant as _
     }
 }
-#[doc = "Field `LEN` reader - CRC length in number of bytes."]
+#[doc = "Field `LEN` reader - CRC length in number of bytes For MODE Ble_LR125Kbit and Ble_LR500Kbit, only LEN set to 3 is supported"]
 pub struct LEN_R(crate::FieldReader<u8, LEN_A>);
 impl LEN_R {
     #[inline(always)]
@@ -99,7 +99,7 @@ impl core::ops::Deref for LEN_R {
         &self.0
     }
 }
-#[doc = "Field `LEN` writer - CRC length in number of bytes."]
+#[doc = "Field `LEN` writer - CRC length in number of bytes For MODE Ble_LR125Kbit and Ble_LR500Kbit, only LEN set to 3 is supported"]
 pub struct LEN_W<'a> {
     w: &'a mut W,
 }
@@ -226,7 +226,7 @@ impl<'a> SKIPADDR_W<'a> {
     }
 }
 impl R {
-    #[doc = "Bits 0:1 - CRC length in number of bytes."]
+    #[doc = "Bits 0:1 - CRC length in number of bytes For MODE Ble_LR125Kbit and Ble_LR500Kbit, only LEN set to 3 is supported"]
     #[inline(always)]
     pub fn len(&self) -> LEN_R {
         LEN_R::new((self.bits & 0x03) as u8)
@@ -238,7 +238,7 @@ impl R {
     }
 }
 impl W {
-    #[doc = "Bits 0:1 - CRC length in number of bytes."]
+    #[doc = "Bits 0:1 - CRC length in number of bytes For MODE Ble_LR125Kbit and Ble_LR500Kbit, only LEN set to 3 is supported"]
     #[inline(always)]
     pub fn len(&mut self) -> LEN_W {
         LEN_W { w: self }

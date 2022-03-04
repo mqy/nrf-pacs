@@ -34,7 +34,7 @@ impl From<crate::W<EVENTS_SUSPENDED_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Last byte has been sent out after the SUSPEND task has been issued, TWI traffic is now suspended.\n\nValue on reset: 0"]
+#[doc = "SUSPEND task has been issued, TWI traffic is now suspended.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum EVENTS_SUSPENDED_A {
     #[doc = "0: Event not generated"]
@@ -48,7 +48,7 @@ impl From<EVENTS_SUSPENDED_A> for bool {
         variant as u8 != 0
     }
 }
-#[doc = "Field `EVENTS_SUSPENDED` reader - Last byte has been sent out after the SUSPEND task has been issued, TWI traffic is now suspended."]
+#[doc = "Field `EVENTS_SUSPENDED` reader - SUSPEND task has been issued, TWI traffic is now suspended."]
 pub struct EVENTS_SUSPENDED_R(crate::FieldReader<bool, EVENTS_SUSPENDED_A>);
 impl EVENTS_SUSPENDED_R {
     #[inline(always)]
@@ -81,7 +81,7 @@ impl core::ops::Deref for EVENTS_SUSPENDED_R {
         &self.0
     }
 }
-#[doc = "Field `EVENTS_SUSPENDED` writer - Last byte has been sent out after the SUSPEND task has been issued, TWI traffic is now suspended."]
+#[doc = "Field `EVENTS_SUSPENDED` writer - SUSPEND task has been issued, TWI traffic is now suspended."]
 pub struct EVENTS_SUSPENDED_W<'a> {
     w: &'a mut W,
 }
@@ -119,14 +119,14 @@ impl<'a> EVENTS_SUSPENDED_W<'a> {
     }
 }
 impl R {
-    #[doc = "Bit 0 - Last byte has been sent out after the SUSPEND task has been issued, TWI traffic is now suspended."]
+    #[doc = "Bit 0 - SUSPEND task has been issued, TWI traffic is now suspended."]
     #[inline(always)]
     pub fn events_suspended(&self) -> EVENTS_SUSPENDED_R {
         EVENTS_SUSPENDED_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
-    #[doc = "Bit 0 - Last byte has been sent out after the SUSPEND task has been issued, TWI traffic is now suspended."]
+    #[doc = "Bit 0 - SUSPEND task has been issued, TWI traffic is now suspended."]
     #[inline(always)]
     pub fn events_suspended(&mut self) -> EVENTS_SUSPENDED_W {
         EVENTS_SUSPENDED_W { w: self }
@@ -138,7 +138,7 @@ impl W {
         self
     }
 }
-#[doc = "Last byte has been sent out after the SUSPEND task has been issued, TWI traffic is now suspended.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [events_suspended](index.html) module"]
+#[doc = "SUSPEND task has been issued, TWI traffic is now suspended.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [events_suspended](index.html) module"]
 pub struct EVENTS_SUSPENDED_SPEC;
 impl crate::RegisterSpec for EVENTS_SUSPENDED_SPEC {
     type Ux = u32;

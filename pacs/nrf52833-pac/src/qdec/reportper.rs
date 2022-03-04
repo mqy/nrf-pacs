@@ -34,27 +34,27 @@ impl From<crate::W<REPORTPER_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Specifies the number of samples to be accumulated in the ACC register before the REPORTRDY and DBLRDY events can be generated\n\nValue on reset: 0"]
+#[doc = "Specifies the number of samples to be accumulated in the ACC register before the REPORTRDY and DBLRDY events can be generated.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum REPORTPER_A {
-    #[doc = "0: 10 samples / report"]
+    #[doc = "0: 10 samples/report"]
     _10SMPL = 0,
-    #[doc = "1: 40 samples / report"]
+    #[doc = "1: 40 samples/report"]
     _40SMPL = 1,
-    #[doc = "2: 80 samples / report"]
+    #[doc = "2: 80 samples/report"]
     _80SMPL = 2,
-    #[doc = "3: 120 samples / report"]
+    #[doc = "3: 120 samples/report"]
     _120SMPL = 3,
-    #[doc = "4: 160 samples / report"]
+    #[doc = "4: 160 samples/report"]
     _160SMPL = 4,
-    #[doc = "5: 200 samples / report"]
+    #[doc = "5: 200 samples/report"]
     _200SMPL = 5,
-    #[doc = "6: 240 samples / report"]
+    #[doc = "6: 240 samples/report"]
     _240SMPL = 6,
-    #[doc = "7: 280 samples / report"]
+    #[doc = "7: 280 samples/report"]
     _280SMPL = 7,
-    #[doc = "8: 1 sample / report"]
+    #[doc = "8: 1 sample/report"]
     _1SMPL = 8,
 }
 impl From<REPORTPER_A> for u8 {
@@ -63,7 +63,7 @@ impl From<REPORTPER_A> for u8 {
         variant as _
     }
 }
-#[doc = "Field `REPORTPER` reader - Specifies the number of samples to be accumulated in the ACC register before the REPORTRDY and DBLRDY events can be generated"]
+#[doc = "Field `REPORTPER` reader - Specifies the number of samples to be accumulated in the ACC register before the REPORTRDY and DBLRDY events can be generated."]
 pub struct REPORTPER_R(crate::FieldReader<u8, REPORTPER_A>);
 impl REPORTPER_R {
     #[inline(always)]
@@ -139,7 +139,7 @@ impl core::ops::Deref for REPORTPER_R {
         &self.0
     }
 }
-#[doc = "Field `REPORTPER` writer - Specifies the number of samples to be accumulated in the ACC register before the REPORTRDY and DBLRDY events can be generated"]
+#[doc = "Field `REPORTPER` writer - Specifies the number of samples to be accumulated in the ACC register before the REPORTRDY and DBLRDY events can be generated."]
 pub struct REPORTPER_W<'a> {
     w: &'a mut W,
 }
@@ -149,47 +149,47 @@ impl<'a> REPORTPER_W<'a> {
     pub fn variant(self, variant: REPORTPER_A) -> &'a mut W {
         unsafe { self.bits(variant.into()) }
     }
-    #[doc = "10 samples / report"]
+    #[doc = "10 samples/report"]
     #[inline(always)]
     pub fn _10smpl(self) -> &'a mut W {
         self.variant(REPORTPER_A::_10SMPL)
     }
-    #[doc = "40 samples / report"]
+    #[doc = "40 samples/report"]
     #[inline(always)]
     pub fn _40smpl(self) -> &'a mut W {
         self.variant(REPORTPER_A::_40SMPL)
     }
-    #[doc = "80 samples / report"]
+    #[doc = "80 samples/report"]
     #[inline(always)]
     pub fn _80smpl(self) -> &'a mut W {
         self.variant(REPORTPER_A::_80SMPL)
     }
-    #[doc = "120 samples / report"]
+    #[doc = "120 samples/report"]
     #[inline(always)]
     pub fn _120smpl(self) -> &'a mut W {
         self.variant(REPORTPER_A::_120SMPL)
     }
-    #[doc = "160 samples / report"]
+    #[doc = "160 samples/report"]
     #[inline(always)]
     pub fn _160smpl(self) -> &'a mut W {
         self.variant(REPORTPER_A::_160SMPL)
     }
-    #[doc = "200 samples / report"]
+    #[doc = "200 samples/report"]
     #[inline(always)]
     pub fn _200smpl(self) -> &'a mut W {
         self.variant(REPORTPER_A::_200SMPL)
     }
-    #[doc = "240 samples / report"]
+    #[doc = "240 samples/report"]
     #[inline(always)]
     pub fn _240smpl(self) -> &'a mut W {
         self.variant(REPORTPER_A::_240SMPL)
     }
-    #[doc = "280 samples / report"]
+    #[doc = "280 samples/report"]
     #[inline(always)]
     pub fn _280smpl(self) -> &'a mut W {
         self.variant(REPORTPER_A::_280SMPL)
     }
-    #[doc = "1 sample / report"]
+    #[doc = "1 sample/report"]
     #[inline(always)]
     pub fn _1smpl(self) -> &'a mut W {
         self.variant(REPORTPER_A::_1SMPL)
@@ -202,14 +202,14 @@ impl<'a> REPORTPER_W<'a> {
     }
 }
 impl R {
-    #[doc = "Bits 0:3 - Specifies the number of samples to be accumulated in the ACC register before the REPORTRDY and DBLRDY events can be generated"]
+    #[doc = "Bits 0:3 - Specifies the number of samples to be accumulated in the ACC register before the REPORTRDY and DBLRDY events can be generated."]
     #[inline(always)]
     pub fn reportper(&self) -> REPORTPER_R {
         REPORTPER_R::new((self.bits & 0x0f) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 0:3 - Specifies the number of samples to be accumulated in the ACC register before the REPORTRDY and DBLRDY events can be generated"]
+    #[doc = "Bits 0:3 - Specifies the number of samples to be accumulated in the ACC register before the REPORTRDY and DBLRDY events can be generated."]
     #[inline(always)]
     pub fn reportper(&mut self) -> REPORTPER_W {
         REPORTPER_W { w: self }

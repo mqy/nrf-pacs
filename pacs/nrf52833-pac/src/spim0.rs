@@ -35,7 +35,7 @@ pub struct RegisterBlock {
     #[doc = "0x308 - Disable interrupt"]
     pub intenclr: crate::Reg<intenclr::INTENCLR_SPEC>,
     _reserved12: [u8; 0xf4],
-    #[doc = "0x400 - Stall status for EasyDMA RAM accesses. The fields in this register is set to STALL by hardware whenever a stall occurres and can be cleared (set to NOSTALL) by the CPU."]
+    #[doc = "0x400 - Stall status for EasyDMA RAM accesses. The fields in this register are set to STALL by hardware whenever a stall occurs and can be cleared (set to NOSTALL) by the CPU."]
     pub stallstat: crate::Reg<stallstat::STALLSTAT_SPEC>,
     _reserved13: [u8; 0xfc],
     #[doc = "0x500 - Enable SPIM"]
@@ -172,7 +172,7 @@ pub type INTENCLR = crate::Reg<intenclr::INTENCLR_SPEC>;
 pub mod intenclr;
 #[doc = "STALLSTAT register accessor: an alias for `Reg<STALLSTAT_SPEC>`"]
 pub type STALLSTAT = crate::Reg<stallstat::STALLSTAT_SPEC>;
-#[doc = "Stall status for EasyDMA RAM accesses. The fields in this register is set to STALL by hardware whenever a stall occurres and can be cleared (set to NOSTALL) by the CPU."]
+#[doc = "Stall status for EasyDMA RAM accesses. The fields in this register are set to STALL by hardware whenever a stall occurs and can be cleared (set to NOSTALL) by the CPU."]
 pub mod stallstat;
 #[doc = "ENABLE register accessor: an alias for `Reg<ENABLE_SPEC>`"]
 pub type ENABLE = crate::Reg<enable::ENABLE_SPEC>;

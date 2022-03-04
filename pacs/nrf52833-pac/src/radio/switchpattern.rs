@@ -34,7 +34,7 @@ impl From<crate::W<SWITCHPATTERN_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `SWITCHPATTERN` reader - Fill array of GPIO patterns for antenna control"]
+#[doc = "Field `SWITCHPATTERN` reader - Fill array of GPIO patterns for antenna control."]
 pub struct SWITCHPATTERN_R(crate::FieldReader<u8, u8>);
 impl SWITCHPATTERN_R {
     #[inline(always)]
@@ -49,7 +49,7 @@ impl core::ops::Deref for SWITCHPATTERN_R {
         &self.0
     }
 }
-#[doc = "Field `SWITCHPATTERN` writer - Fill array of GPIO patterns for antenna control"]
+#[doc = "Field `SWITCHPATTERN` writer - Fill array of GPIO patterns for antenna control."]
 pub struct SWITCHPATTERN_W<'a> {
     w: &'a mut W,
 }
@@ -62,14 +62,14 @@ impl<'a> SWITCHPATTERN_W<'a> {
     }
 }
 impl R {
-    #[doc = "Bits 0:7 - Fill array of GPIO patterns for antenna control"]
+    #[doc = "Bits 0:7 - Fill array of GPIO patterns for antenna control."]
     #[inline(always)]
     pub fn switchpattern(&self) -> SWITCHPATTERN_R {
         SWITCHPATTERN_R::new((self.bits & 0xff) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 0:7 - Fill array of GPIO patterns for antenna control"]
+    #[doc = "Bits 0:7 - Fill array of GPIO patterns for antenna control."]
     #[inline(always)]
     pub fn switchpattern(&mut self) -> SWITCHPATTERN_W {
         SWITCHPATTERN_W { w: self }

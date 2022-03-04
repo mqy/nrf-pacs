@@ -34,7 +34,7 @@ impl From<crate::W<NIRK_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `NIRK` reader - Number of Identity root keys available in the IRK data structure"]
+#[doc = "Field `NIRK` reader - Number of Identity Root Keys available in the IRK data structure"]
 pub struct NIRK_R(crate::FieldReader<u8, u8>);
 impl NIRK_R {
     #[inline(always)]
@@ -49,7 +49,7 @@ impl core::ops::Deref for NIRK_R {
         &self.0
     }
 }
-#[doc = "Field `NIRK` writer - Number of Identity root keys available in the IRK data structure"]
+#[doc = "Field `NIRK` writer - Number of Identity Root Keys available in the IRK data structure"]
 pub struct NIRK_W<'a> {
     w: &'a mut W,
 }
@@ -62,14 +62,14 @@ impl<'a> NIRK_W<'a> {
     }
 }
 impl R {
-    #[doc = "Bits 0:4 - Number of Identity root keys available in the IRK data structure"]
+    #[doc = "Bits 0:4 - Number of Identity Root Keys available in the IRK data structure"]
     #[inline(always)]
     pub fn nirk(&self) -> NIRK_R {
         NIRK_R::new((self.bits & 0x1f) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 0:4 - Number of Identity root keys available in the IRK data structure"]
+    #[doc = "Bits 0:4 - Number of Identity Root Keys available in the IRK data structure"]
     #[inline(always)]
     pub fn nirk(&mut self) -> NIRK_W {
         NIRK_W { w: self }

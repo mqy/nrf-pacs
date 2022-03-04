@@ -1,7 +1,7 @@
 #[doc = r"Register block"]
 #[repr(C)]
 pub struct RegisterBlock {
-    #[doc = "0x00 - Start generation of key-stream. This operation will stop by itself when completed."]
+    #[doc = "0x00 - Start generation of keystream. This operation will stop by itself when completed."]
     pub tasks_ksgen: crate::Reg<tasks_ksgen::TASKS_KSGEN_SPEC>,
     #[doc = "0x04 - Start encryption/decryption. This operation will stop by itself when completed."]
     pub tasks_crypt: crate::Reg<tasks_crypt::TASKS_CRYPT_SPEC>,
@@ -10,7 +10,7 @@ pub struct RegisterBlock {
     #[doc = "0x0c - Override DATARATE setting in MODE register with the contents of the RATEOVERRIDE register for any ongoing encryption/decryption"]
     pub tasks_rateoverride: crate::Reg<tasks_rateoverride::TASKS_RATEOVERRIDE_SPEC>,
     _reserved4: [u8; 0xf0],
-    #[doc = "0x100 - Key-stream generation complete"]
+    #[doc = "0x100 - Keystream generation complete"]
     pub events_endksgen: crate::Reg<events_endksgen::EVENTS_ENDKSGEN_SPEC>,
     #[doc = "0x104 - Encrypt/decrypt complete"]
     pub events_endcrypt: crate::Reg<events_endcrypt::EVENTS_ENDCRYPT_SPEC>,
@@ -32,7 +32,7 @@ pub struct RegisterBlock {
     pub enable: crate::Reg<enable::ENABLE_SPEC>,
     #[doc = "0x504 - Operation mode"]
     pub mode: crate::Reg<mode::MODE_SPEC>,
-    #[doc = "0x508 - Pointer to data structure holding AES key and NONCE vector"]
+    #[doc = "0x508 - Pointer to data structure holding the AES key and the NONCE vector"]
     pub cnfptr: crate::Reg<cnfptr::CNFPTR_SPEC>,
     #[doc = "0x50c - Input pointer"]
     pub inptr: crate::Reg<inptr::INPTR_SPEC>,
@@ -40,14 +40,16 @@ pub struct RegisterBlock {
     pub outptr: crate::Reg<outptr::OUTPTR_SPEC>,
     #[doc = "0x514 - Pointer to data area used for temporary storage"]
     pub scratchptr: crate::Reg<scratchptr::SCRATCHPTR_SPEC>,
-    #[doc = "0x518 - Length of key-stream generated when MODE.LENGTH = Extended."]
+    #[doc = "0x518 - Length of keystream generated when MODE.LENGTH = Extended"]
     pub maxpacketsize: crate::Reg<maxpacketsize::MAXPACKETSIZE_SPEC>,
     #[doc = "0x51c - Data rate override setting."]
     pub rateoverride: crate::Reg<rateoverride::RATEOVERRIDE_SPEC>,
+    #[doc = "0x520 - Header (S0) mask."]
+    pub headermask: crate::Reg<headermask::HEADERMASK_SPEC>,
 }
 #[doc = "TASKS_KSGEN register accessor: an alias for `Reg<TASKS_KSGEN_SPEC>`"]
 pub type TASKS_KSGEN = crate::Reg<tasks_ksgen::TASKS_KSGEN_SPEC>;
-#[doc = "Start generation of key-stream. This operation will stop by itself when completed."]
+#[doc = "Start generation of keystream. This operation will stop by itself when completed."]
 pub mod tasks_ksgen;
 #[doc = "TASKS_CRYPT register accessor: an alias for `Reg<TASKS_CRYPT_SPEC>`"]
 pub type TASKS_CRYPT = crate::Reg<tasks_crypt::TASKS_CRYPT_SPEC>;
@@ -63,7 +65,7 @@ pub type TASKS_RATEOVERRIDE = crate::Reg<tasks_rateoverride::TASKS_RATEOVERRIDE_
 pub mod tasks_rateoverride;
 #[doc = "EVENTS_ENDKSGEN register accessor: an alias for `Reg<EVENTS_ENDKSGEN_SPEC>`"]
 pub type EVENTS_ENDKSGEN = crate::Reg<events_endksgen::EVENTS_ENDKSGEN_SPEC>;
-#[doc = "Key-stream generation complete"]
+#[doc = "Keystream generation complete"]
 pub mod events_endksgen;
 #[doc = "EVENTS_ENDCRYPT register accessor: an alias for `Reg<EVENTS_ENDCRYPT_SPEC>`"]
 pub type EVENTS_ENDCRYPT = crate::Reg<events_endcrypt::EVENTS_ENDCRYPT_SPEC>;
@@ -99,7 +101,7 @@ pub type MODE = crate::Reg<mode::MODE_SPEC>;
 pub mod mode;
 #[doc = "CNFPTR register accessor: an alias for `Reg<CNFPTR_SPEC>`"]
 pub type CNFPTR = crate::Reg<cnfptr::CNFPTR_SPEC>;
-#[doc = "Pointer to data structure holding AES key and NONCE vector"]
+#[doc = "Pointer to data structure holding the AES key and the NONCE vector"]
 pub mod cnfptr;
 #[doc = "INPTR register accessor: an alias for `Reg<INPTR_SPEC>`"]
 pub type INPTR = crate::Reg<inptr::INPTR_SPEC>;
@@ -115,9 +117,13 @@ pub type SCRATCHPTR = crate::Reg<scratchptr::SCRATCHPTR_SPEC>;
 pub mod scratchptr;
 #[doc = "MAXPACKETSIZE register accessor: an alias for `Reg<MAXPACKETSIZE_SPEC>`"]
 pub type MAXPACKETSIZE = crate::Reg<maxpacketsize::MAXPACKETSIZE_SPEC>;
-#[doc = "Length of key-stream generated when MODE.LENGTH = Extended."]
+#[doc = "Length of keystream generated when MODE.LENGTH = Extended"]
 pub mod maxpacketsize;
 #[doc = "RATEOVERRIDE register accessor: an alias for `Reg<RATEOVERRIDE_SPEC>`"]
 pub type RATEOVERRIDE = crate::Reg<rateoverride::RATEOVERRIDE_SPEC>;
 #[doc = "Data rate override setting."]
 pub mod rateoverride;
+#[doc = "HEADERMASK register accessor: an alias for `Reg<HEADERMASK_SPEC>`"]
+pub type HEADERMASK = crate::Reg<headermask::HEADERMASK_SPEC>;
+#[doc = "Header (S0) mask."]
+pub mod headermask;

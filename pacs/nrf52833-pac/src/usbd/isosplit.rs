@@ -38,7 +38,7 @@ impl From<crate::W<ISOSPLIT_SPEC>> for W {
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u16)]
 pub enum SPLIT_A {
-    #[doc = "0: Full buffer dedicated to either iso IN or OUT"]
+    #[doc = "0: Full buffer dedicated to either ISO IN or OUT"]
     ONEDIR = 0,
     #[doc = "128: Lower half for IN, upper half for OUT"]
     HALFIN = 128,
@@ -93,7 +93,7 @@ impl<'a> SPLIT_W<'a> {
     pub fn variant(self, variant: SPLIT_A) -> &'a mut W {
         unsafe { self.bits(variant.into()) }
     }
-    #[doc = "Full buffer dedicated to either iso IN or OUT"]
+    #[doc = "Full buffer dedicated to either ISO IN or OUT"]
     #[inline(always)]
     pub fn one_dir(self) -> &'a mut W {
         self.variant(SPLIT_A::ONEDIR)

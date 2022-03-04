@@ -51,7 +51,7 @@ pub struct RegisterBlock {
     #[doc = "0x308 - Disable interrupt"]
     pub intenclr: crate::Reg<intenclr::INTENCLR_SPEC>,
     _reserved20: [u8; 0x0174],
-    #[doc = "0x480 - Error source Note : this register is read / write one to clear."]
+    #[doc = "0x480 - Error source This register is read/write one to clear."]
     pub errorsrc: crate::Reg<errorsrc::ERRORSRC_SPEC>,
     _reserved21: [u8; 0x7c],
     #[doc = "0x500 - Enable UART"]
@@ -195,7 +195,7 @@ pub type INTENCLR = crate::Reg<intenclr::INTENCLR_SPEC>;
 pub mod intenclr;
 #[doc = "ERRORSRC register accessor: an alias for `Reg<ERRORSRC_SPEC>`"]
 pub type ERRORSRC = crate::Reg<errorsrc::ERRORSRC_SPEC>;
-#[doc = "Error source Note : this register is read / write one to clear."]
+#[doc = "Error source This register is read/write one to clear."]
 pub mod errorsrc;
 #[doc = "ENABLE register accessor: an alias for `Reg<ENABLE_SPEC>`"]
 pub type ENABLE = crate::Reg<enable::ENABLE_SPEC>;

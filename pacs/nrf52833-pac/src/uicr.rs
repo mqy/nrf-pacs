@@ -19,7 +19,7 @@ pub struct RegisterBlock {
     #[doc = "0x210 - Processor debug control"]
     pub debugctrl: crate::Reg<debugctrl::DEBUGCTRL_SPEC>,
     _reserved7: [u8; 0xf0],
-    #[doc = "0x304 - Output voltage from REG0 regulator stage. The maximum output voltage from this stage is given as VDDH - VREG0DROP."]
+    #[doc = "0x304 - Output voltage from REG0 regulator stage. The maximum output voltage from this stage is given as VDDH - V_VDDH-VDD."]
     pub regout0: crate::Reg<regout0::REGOUT0_SPEC>,
 }
 #[doc = "NRFFW register accessor: an alias for `Reg<NRFFW_SPEC>`"]
@@ -52,5 +52,5 @@ pub type DEBUGCTRL = crate::Reg<debugctrl::DEBUGCTRL_SPEC>;
 pub mod debugctrl;
 #[doc = "REGOUT0 register accessor: an alias for `Reg<REGOUT0_SPEC>`"]
 pub type REGOUT0 = crate::Reg<regout0::REGOUT0_SPEC>;
-#[doc = "Output voltage from REG0 regulator stage. The maximum output voltage from this stage is given as VDDH - VREG0DROP."]
+#[doc = "Output voltage from REG0 regulator stage. The maximum output voltage from this stage is given as VDDH - V_VDDH-VDD."]
 pub mod regout0;

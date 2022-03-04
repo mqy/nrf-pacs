@@ -34,7 +34,7 @@ impl From<crate::W<CNFPTR_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `CNFPTR` reader - Pointer to the data structure holding the AES key and the CCM NONCE vector (see Table 1 CCM data structure overview)"]
+#[doc = "Field `CNFPTR` reader - Pointer to the data structure holding the AES key and the CCM NONCE vector (see table CCM data structure overview)"]
 pub struct CNFPTR_R(crate::FieldReader<u32, u32>);
 impl CNFPTR_R {
     #[inline(always)]
@@ -49,7 +49,7 @@ impl core::ops::Deref for CNFPTR_R {
         &self.0
     }
 }
-#[doc = "Field `CNFPTR` writer - Pointer to the data structure holding the AES key and the CCM NONCE vector (see Table 1 CCM data structure overview)"]
+#[doc = "Field `CNFPTR` writer - Pointer to the data structure holding the AES key and the CCM NONCE vector (see table CCM data structure overview)"]
 pub struct CNFPTR_W<'a> {
     w: &'a mut W,
 }
@@ -62,14 +62,14 @@ impl<'a> CNFPTR_W<'a> {
     }
 }
 impl R {
-    #[doc = "Bits 0:31 - Pointer to the data structure holding the AES key and the CCM NONCE vector (see Table 1 CCM data structure overview)"]
+    #[doc = "Bits 0:31 - Pointer to the data structure holding the AES key and the CCM NONCE vector (see table CCM data structure overview)"]
     #[inline(always)]
     pub fn cnfptr(&self) -> CNFPTR_R {
         CNFPTR_R::new(self.bits)
     }
 }
 impl W {
-    #[doc = "Bits 0:31 - Pointer to the data structure holding the AES key and the CCM NONCE vector (see Table 1 CCM data structure overview)"]
+    #[doc = "Bits 0:31 - Pointer to the data structure holding the AES key and the CCM NONCE vector (see table CCM data structure overview)"]
     #[inline(always)]
     pub fn cnfptr(&mut self) -> CNFPTR_W {
         CNFPTR_W { w: self }
@@ -81,7 +81,7 @@ impl W {
         self
     }
 }
-#[doc = "Pointer to data structure holding AES key and NONCE vector\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cnfptr](index.html) module"]
+#[doc = "Pointer to data structure holding the AES key and the NONCE vector\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cnfptr](index.html) module"]
 pub struct CNFPTR_SPEC;
 impl crate::RegisterSpec for CNFPTR_SPEC {
     type Ux = u32;

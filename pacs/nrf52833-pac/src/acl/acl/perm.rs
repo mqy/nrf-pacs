@@ -34,12 +34,12 @@ impl From<crate::W<PERM_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Configure write and erase permissions for region n. Write '0' has no effect.\n\nValue on reset: 0"]
+#[doc = "Configure write and erase permissions for region n. Writing a '0' has no effect.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum WRITE_A {
-    #[doc = "0: Allow write and erase instructions to region n"]
+    #[doc = "0: Allow write and erase instructions to region n."]
     ENABLE = 0,
-    #[doc = "1: Block write and erase instructions to region n"]
+    #[doc = "1: Block write and erase instructions to region n."]
     DISABLE = 1,
 }
 impl From<WRITE_A> for bool {
@@ -48,7 +48,7 @@ impl From<WRITE_A> for bool {
         variant as u8 != 0
     }
 }
-#[doc = "Field `WRITE` reader - Configure write and erase permissions for region n. Write '0' has no effect."]
+#[doc = "Field `WRITE` reader - Configure write and erase permissions for region n. Writing a '0' has no effect."]
 pub struct WRITE_R(crate::FieldReader<bool, WRITE_A>);
 impl WRITE_R {
     #[inline(always)]
@@ -81,7 +81,7 @@ impl core::ops::Deref for WRITE_R {
         &self.0
     }
 }
-#[doc = "Field `WRITE` writer - Configure write and erase permissions for region n. Write '0' has no effect."]
+#[doc = "Field `WRITE` writer - Configure write and erase permissions for region n. Writing a '0' has no effect."]
 pub struct WRITE_W<'a> {
     w: &'a mut W,
 }
@@ -91,12 +91,12 @@ impl<'a> WRITE_W<'a> {
     pub fn variant(self, variant: WRITE_A) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Allow write and erase instructions to region n"]
+    #[doc = "Allow write and erase instructions to region n."]
     #[inline(always)]
     pub fn enable(self) -> &'a mut W {
         self.variant(WRITE_A::ENABLE)
     }
-    #[doc = "Block write and erase instructions to region n"]
+    #[doc = "Block write and erase instructions to region n."]
     #[inline(always)]
     pub fn disable(self) -> &'a mut W {
         self.variant(WRITE_A::DISABLE)
@@ -118,12 +118,12 @@ impl<'a> WRITE_W<'a> {
         self.w
     }
 }
-#[doc = "Configure read permissions for region n. Write '0' has no effect.\n\nValue on reset: 0"]
+#[doc = "Configure read permissions for region n. Writing a '0' has no effect.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum READ_A {
-    #[doc = "0: Allow read instructions to region n"]
+    #[doc = "0: Allow read instructions to region n."]
     ENABLE = 0,
-    #[doc = "1: Block read instructions to region n"]
+    #[doc = "1: Block read instructions to region n."]
     DISABLE = 1,
 }
 impl From<READ_A> for bool {
@@ -132,7 +132,7 @@ impl From<READ_A> for bool {
         variant as u8 != 0
     }
 }
-#[doc = "Field `READ` reader - Configure read permissions for region n. Write '0' has no effect."]
+#[doc = "Field `READ` reader - Configure read permissions for region n. Writing a '0' has no effect."]
 pub struct READ_R(crate::FieldReader<bool, READ_A>);
 impl READ_R {
     #[inline(always)]
@@ -165,7 +165,7 @@ impl core::ops::Deref for READ_R {
         &self.0
     }
 }
-#[doc = "Field `READ` writer - Configure read permissions for region n. Write '0' has no effect."]
+#[doc = "Field `READ` writer - Configure read permissions for region n. Writing a '0' has no effect."]
 pub struct READ_W<'a> {
     w: &'a mut W,
 }
@@ -175,12 +175,12 @@ impl<'a> READ_W<'a> {
     pub fn variant(self, variant: READ_A) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Allow read instructions to region n"]
+    #[doc = "Allow read instructions to region n."]
     #[inline(always)]
     pub fn enable(self) -> &'a mut W {
         self.variant(READ_A::ENABLE)
     }
-    #[doc = "Block read instructions to region n"]
+    #[doc = "Block read instructions to region n."]
     #[inline(always)]
     pub fn disable(self) -> &'a mut W {
         self.variant(READ_A::DISABLE)
@@ -203,24 +203,24 @@ impl<'a> READ_W<'a> {
     }
 }
 impl R {
-    #[doc = "Bit 1 - Configure write and erase permissions for region n. Write '0' has no effect."]
+    #[doc = "Bit 1 - Configure write and erase permissions for region n. Writing a '0' has no effect."]
     #[inline(always)]
     pub fn write(&self) -> WRITE_R {
         WRITE_R::new(((self.bits >> 1) & 0x01) != 0)
     }
-    #[doc = "Bit 2 - Configure read permissions for region n. Write '0' has no effect."]
+    #[doc = "Bit 2 - Configure read permissions for region n. Writing a '0' has no effect."]
     #[inline(always)]
     pub fn read(&self) -> READ_R {
         READ_R::new(((self.bits >> 2) & 0x01) != 0)
     }
 }
 impl W {
-    #[doc = "Bit 1 - Configure write and erase permissions for region n. Write '0' has no effect."]
+    #[doc = "Bit 1 - Configure write and erase permissions for region n. Writing a '0' has no effect."]
     #[inline(always)]
     pub fn write(&mut self) -> WRITE_W {
         WRITE_W { w: self }
     }
-    #[doc = "Bit 2 - Configure read permissions for region n. Write '0' has no effect."]
+    #[doc = "Bit 2 - Configure read permissions for region n. Writing a '0' has no effect."]
     #[inline(always)]
     pub fn read(&mut self) -> READ_W {
         READ_W { w: self }

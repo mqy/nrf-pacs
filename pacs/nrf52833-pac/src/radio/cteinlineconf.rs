@@ -290,11 +290,11 @@ impl<'a> CTEERRORHANDLING_W<'a> {
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum CTETIMEVALIDRANGE_A {
-    #[doc = "0: 20 in 8us unit (default) Set to 20 if parsed CTETime is larger han 20"]
+    #[doc = "0: 20 in 8 us unit (default) Set to 20 if parsed CTETime is larger than 20"]
     _20 = 0,
-    #[doc = "1: 31 in 8us unit"]
+    #[doc = "1: 31 in 8 us unit"]
     _31 = 1,
-    #[doc = "2: 63 in 8us unit"]
+    #[doc = "2: 63 in 8 us unit"]
     _63 = 2,
 }
 impl From<CTETIMEVALIDRANGE_A> for u8 {
@@ -353,17 +353,17 @@ impl<'a> CTETIMEVALIDRANGE_W<'a> {
     pub fn variant(self, variant: CTETIMEVALIDRANGE_A) -> &'a mut W {
         unsafe { self.bits(variant.into()) }
     }
-    #[doc = "20 in 8us unit (default) Set to 20 if parsed CTETime is larger han 20"]
+    #[doc = "20 in 8 us unit (default) Set to 20 if parsed CTETime is larger than 20"]
     #[inline(always)]
     pub fn _20(self) -> &'a mut W {
         self.variant(CTETIMEVALIDRANGE_A::_20)
     }
-    #[doc = "31 in 8us unit"]
+    #[doc = "31 in 8 us unit"]
     #[inline(always)]
     pub fn _31(self) -> &'a mut W {
         self.variant(CTETIMEVALIDRANGE_A::_31)
     }
-    #[doc = "63 in 8us unit"]
+    #[doc = "63 in 8 us unit"]
     #[inline(always)]
     pub fn _63(self) -> &'a mut W {
         self.variant(CTETIMEVALIDRANGE_A::_63)
@@ -375,21 +375,21 @@ impl<'a> CTETIMEVALIDRANGE_W<'a> {
         self.w
     }
 }
-#[doc = "Spacing between samples for the samples in the SWITCHING period when CTEINLINEMODE is set\n\nValue on reset: 2"]
+#[doc = "Spacing between samples for the samples in the SWITCHING period when CTEINLINEMODE is set.\n\nValue on reset: 2"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum CTEINLINERXMODE1US_A {
-    #[doc = "1: 4us"]
+    #[doc = "1: 4 us"]
     _4US = 1,
-    #[doc = "2: 2us"]
+    #[doc = "2: 2 us"]
     _2US = 2,
-    #[doc = "3: 1us"]
+    #[doc = "3: 1 us"]
     _1US = 3,
-    #[doc = "4: 0.5us"]
+    #[doc = "4: 0.5 us"]
     _500NS = 4,
-    #[doc = "5: 0.25us"]
+    #[doc = "5: 0.25 us"]
     _250NS = 5,
-    #[doc = "6: 0.125us"]
+    #[doc = "6: 0.125 us"]
     _125NS = 6,
 }
 impl From<CTEINLINERXMODE1US_A> for u8 {
@@ -398,7 +398,7 @@ impl From<CTEINLINERXMODE1US_A> for u8 {
         variant as _
     }
 }
-#[doc = "Field `CTEINLINERXMODE1US` reader - Spacing between samples for the samples in the SWITCHING period when CTEINLINEMODE is set"]
+#[doc = "Field `CTEINLINERXMODE1US` reader - Spacing between samples for the samples in the SWITCHING period when CTEINLINEMODE is set."]
 pub struct CTEINLINERXMODE1US_R(crate::FieldReader<u8, CTEINLINERXMODE1US_A>);
 impl CTEINLINERXMODE1US_R {
     #[inline(always)]
@@ -456,7 +456,7 @@ impl core::ops::Deref for CTEINLINERXMODE1US_R {
         &self.0
     }
 }
-#[doc = "Field `CTEINLINERXMODE1US` writer - Spacing between samples for the samples in the SWITCHING period when CTEINLINEMODE is set"]
+#[doc = "Field `CTEINLINERXMODE1US` writer - Spacing between samples for the samples in the SWITCHING period when CTEINLINEMODE is set."]
 pub struct CTEINLINERXMODE1US_W<'a> {
     w: &'a mut W,
 }
@@ -466,32 +466,32 @@ impl<'a> CTEINLINERXMODE1US_W<'a> {
     pub fn variant(self, variant: CTEINLINERXMODE1US_A) -> &'a mut W {
         unsafe { self.bits(variant.into()) }
     }
-    #[doc = "4us"]
+    #[doc = "4 us"]
     #[inline(always)]
     pub fn _4us(self) -> &'a mut W {
         self.variant(CTEINLINERXMODE1US_A::_4US)
     }
-    #[doc = "2us"]
+    #[doc = "2 us"]
     #[inline(always)]
     pub fn _2us(self) -> &'a mut W {
         self.variant(CTEINLINERXMODE1US_A::_2US)
     }
-    #[doc = "1us"]
+    #[doc = "1 us"]
     #[inline(always)]
     pub fn _1us(self) -> &'a mut W {
         self.variant(CTEINLINERXMODE1US_A::_1US)
     }
-    #[doc = "0.5us"]
+    #[doc = "0.5 us"]
     #[inline(always)]
     pub fn _500ns(self) -> &'a mut W {
         self.variant(CTEINLINERXMODE1US_A::_500NS)
     }
-    #[doc = "0.25us"]
+    #[doc = "0.25 us"]
     #[inline(always)]
     pub fn _250ns(self) -> &'a mut W {
         self.variant(CTEINLINERXMODE1US_A::_250NS)
     }
-    #[doc = "0.125us"]
+    #[doc = "0.125 us"]
     #[inline(always)]
     pub fn _125ns(self) -> &'a mut W {
         self.variant(CTEINLINERXMODE1US_A::_125NS)
@@ -503,21 +503,21 @@ impl<'a> CTEINLINERXMODE1US_W<'a> {
         self.w
     }
 }
-#[doc = "Spacing between samples for the samples in the SWITCHING period when CTEINLINEMODE is set\n\nValue on reset: 1"]
+#[doc = "Spacing between samples for the samples in the SWITCHING period when CTEINLINEMODE is set.\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum CTEINLINERXMODE2US_A {
-    #[doc = "1: 4us"]
+    #[doc = "1: 4 us"]
     _4US = 1,
-    #[doc = "2: 2us"]
+    #[doc = "2: 2 us"]
     _2US = 2,
-    #[doc = "3: 1us"]
+    #[doc = "3: 1 us"]
     _1US = 3,
-    #[doc = "4: 0.5us"]
+    #[doc = "4: 0.5 us"]
     _500NS = 4,
-    #[doc = "5: 0.25us"]
+    #[doc = "5: 0.25 us"]
     _250NS = 5,
-    #[doc = "6: 0.125us"]
+    #[doc = "6: 0.125 us"]
     _125NS = 6,
 }
 impl From<CTEINLINERXMODE2US_A> for u8 {
@@ -526,7 +526,7 @@ impl From<CTEINLINERXMODE2US_A> for u8 {
         variant as _
     }
 }
-#[doc = "Field `CTEINLINERXMODE2US` reader - Spacing between samples for the samples in the SWITCHING period when CTEINLINEMODE is set"]
+#[doc = "Field `CTEINLINERXMODE2US` reader - Spacing between samples for the samples in the SWITCHING period when CTEINLINEMODE is set."]
 pub struct CTEINLINERXMODE2US_R(crate::FieldReader<u8, CTEINLINERXMODE2US_A>);
 impl CTEINLINERXMODE2US_R {
     #[inline(always)]
@@ -584,7 +584,7 @@ impl core::ops::Deref for CTEINLINERXMODE2US_R {
         &self.0
     }
 }
-#[doc = "Field `CTEINLINERXMODE2US` writer - Spacing between samples for the samples in the SWITCHING period when CTEINLINEMODE is set"]
+#[doc = "Field `CTEINLINERXMODE2US` writer - Spacing between samples for the samples in the SWITCHING period when CTEINLINEMODE is set."]
 pub struct CTEINLINERXMODE2US_W<'a> {
     w: &'a mut W,
 }
@@ -594,32 +594,32 @@ impl<'a> CTEINLINERXMODE2US_W<'a> {
     pub fn variant(self, variant: CTEINLINERXMODE2US_A) -> &'a mut W {
         unsafe { self.bits(variant.into()) }
     }
-    #[doc = "4us"]
+    #[doc = "4 us"]
     #[inline(always)]
     pub fn _4us(self) -> &'a mut W {
         self.variant(CTEINLINERXMODE2US_A::_4US)
     }
-    #[doc = "2us"]
+    #[doc = "2 us"]
     #[inline(always)]
     pub fn _2us(self) -> &'a mut W {
         self.variant(CTEINLINERXMODE2US_A::_2US)
     }
-    #[doc = "1us"]
+    #[doc = "1 us"]
     #[inline(always)]
     pub fn _1us(self) -> &'a mut W {
         self.variant(CTEINLINERXMODE2US_A::_1US)
     }
-    #[doc = "0.5us"]
+    #[doc = "0.5 us"]
     #[inline(always)]
     pub fn _500ns(self) -> &'a mut W {
         self.variant(CTEINLINERXMODE2US_A::_500NS)
     }
-    #[doc = "0.25us"]
+    #[doc = "0.25 us"]
     #[inline(always)]
     pub fn _250ns(self) -> &'a mut W {
         self.variant(CTEINLINERXMODE2US_A::_250NS)
     }
-    #[doc = "0.125us"]
+    #[doc = "0.125 us"]
     #[inline(always)]
     pub fn _125ns(self) -> &'a mut W {
         self.variant(CTEINLINERXMODE2US_A::_125NS)
@@ -706,12 +706,12 @@ impl R {
     pub fn ctetimevalidrange(&self) -> CTETIMEVALIDRANGE_R {
         CTETIMEVALIDRANGE_R::new(((self.bits >> 6) & 0x03) as u8)
     }
-    #[doc = "Bits 10:12 - Spacing between samples for the samples in the SWITCHING period when CTEINLINEMODE is set"]
+    #[doc = "Bits 10:12 - Spacing between samples for the samples in the SWITCHING period when CTEINLINEMODE is set."]
     #[inline(always)]
     pub fn cteinlinerxmode1us(&self) -> CTEINLINERXMODE1US_R {
         CTEINLINERXMODE1US_R::new(((self.bits >> 10) & 0x07) as u8)
     }
-    #[doc = "Bits 13:15 - Spacing between samples for the samples in the SWITCHING period when CTEINLINEMODE is set"]
+    #[doc = "Bits 13:15 - Spacing between samples for the samples in the SWITCHING period when CTEINLINEMODE is set."]
     #[inline(always)]
     pub fn cteinlinerxmode2us(&self) -> CTEINLINERXMODE2US_R {
         CTEINLINERXMODE2US_R::new(((self.bits >> 13) & 0x07) as u8)
@@ -748,12 +748,12 @@ impl W {
     pub fn ctetimevalidrange(&mut self) -> CTETIMEVALIDRANGE_W {
         CTETIMEVALIDRANGE_W { w: self }
     }
-    #[doc = "Bits 10:12 - Spacing between samples for the samples in the SWITCHING period when CTEINLINEMODE is set"]
+    #[doc = "Bits 10:12 - Spacing between samples for the samples in the SWITCHING period when CTEINLINEMODE is set."]
     #[inline(always)]
     pub fn cteinlinerxmode1us(&mut self) -> CTEINLINERXMODE1US_W {
         CTEINLINERXMODE1US_W { w: self }
     }
-    #[doc = "Bits 13:15 - Spacing between samples for the samples in the SWITCHING period when CTEINLINEMODE is set"]
+    #[doc = "Bits 13:15 - Spacing between samples for the samples in the SWITCHING period when CTEINLINEMODE is set."]
     #[inline(always)]
     pub fn cteinlinerxmode2us(&mut self) -> CTEINLINERXMODE2US_W {
         CTEINLINERXMODE2US_W { w: self }

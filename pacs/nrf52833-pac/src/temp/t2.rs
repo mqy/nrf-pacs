@@ -34,7 +34,7 @@ impl From<crate::W<T2_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `T2` reader - End point of 3rd piece wise linear function"]
+#[doc = "Field `T2` reader - End point of third piecewise linear function"]
 pub struct T2_R(crate::FieldReader<u8, u8>);
 impl T2_R {
     #[inline(always)]
@@ -49,7 +49,7 @@ impl core::ops::Deref for T2_R {
         &self.0
     }
 }
-#[doc = "Field `T2` writer - End point of 3rd piece wise linear function"]
+#[doc = "Field `T2` writer - End point of third piecewise linear function"]
 pub struct T2_W<'a> {
     w: &'a mut W,
 }
@@ -62,14 +62,14 @@ impl<'a> T2_W<'a> {
     }
 }
 impl R {
-    #[doc = "Bits 0:7 - End point of 3rd piece wise linear function"]
+    #[doc = "Bits 0:7 - End point of third piecewise linear function"]
     #[inline(always)]
     pub fn t2(&self) -> T2_R {
         T2_R::new((self.bits & 0xff) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 0:7 - End point of 3rd piece wise linear function"]
+    #[doc = "Bits 0:7 - End point of third piecewise linear function"]
     #[inline(always)]
     pub fn t2(&mut self) -> T2_W {
         T2_W { w: self }
@@ -81,7 +81,7 @@ impl W {
         self
     }
 }
-#[doc = "End point of 3rd piece wise linear function\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [t2](index.html) module"]
+#[doc = "End point of third piecewise linear function\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [t2](index.html) module"]
 pub struct T2_SPEC;
 impl crate::RegisterSpec for T2_SPEC {
     type Ux = u32;

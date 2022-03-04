@@ -61,7 +61,7 @@ impl<'a> FREQUENCY_W<'a> {
         self.w
     }
 }
-#[doc = "Channel map selection.\n\nValue on reset: 0"]
+#[doc = "Channel map selection\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum MAP_A {
     #[doc = "0: Channel map between 2400 MHZ .. 2500 MHz"]
@@ -75,7 +75,7 @@ impl From<MAP_A> for bool {
         variant as u8 != 0
     }
 }
-#[doc = "Field `MAP` reader - Channel map selection."]
+#[doc = "Field `MAP` reader - Channel map selection"]
 pub struct MAP_R(crate::FieldReader<bool, MAP_A>);
 impl MAP_R {
     #[inline(always)]
@@ -108,7 +108,7 @@ impl core::ops::Deref for MAP_R {
         &self.0
     }
 }
-#[doc = "Field `MAP` writer - Channel map selection."]
+#[doc = "Field `MAP` writer - Channel map selection"]
 pub struct MAP_W<'a> {
     w: &'a mut W,
 }
@@ -151,7 +151,7 @@ impl R {
     pub fn frequency(&self) -> FREQUENCY_R {
         FREQUENCY_R::new((self.bits & 0x7f) as u8)
     }
-    #[doc = "Bit 8 - Channel map selection."]
+    #[doc = "Bit 8 - Channel map selection"]
     #[inline(always)]
     pub fn map(&self) -> MAP_R {
         MAP_R::new(((self.bits >> 8) & 0x01) != 0)
@@ -163,7 +163,7 @@ impl W {
     pub fn frequency(&mut self) -> FREQUENCY_W {
         FREQUENCY_W { w: self }
     }
-    #[doc = "Bit 8 - Channel map selection."]
+    #[doc = "Bit 8 - Channel map selection"]
     #[inline(always)]
     pub fn map(&mut self) -> MAP_W {
         MAP_W { w: self }

@@ -149,11 +149,11 @@ impl<'a> DFEINEXTENSION_W<'a> {
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum TSWITCHSPACING_A {
-    #[doc = "1: 4us"]
+    #[doc = "1: 4 us"]
     _4US = 1,
-    #[doc = "2: 2us"]
+    #[doc = "2: 2 us"]
     _2US = 2,
-    #[doc = "3: 1us"]
+    #[doc = "3: 1 us"]
     _1US = 3,
 }
 impl From<TSWITCHSPACING_A> for u8 {
@@ -212,17 +212,17 @@ impl<'a> TSWITCHSPACING_W<'a> {
     pub fn variant(self, variant: TSWITCHSPACING_A) -> &'a mut W {
         unsafe { self.bits(variant.into()) }
     }
-    #[doc = "4us"]
+    #[doc = "4 us"]
     #[inline(always)]
     pub fn _4us(self) -> &'a mut W {
         self.variant(TSWITCHSPACING_A::_4US)
     }
-    #[doc = "2us"]
+    #[doc = "2 us"]
     #[inline(always)]
     pub fn _2us(self) -> &'a mut W {
         self.variant(TSWITCHSPACING_A::_2US)
     }
-    #[doc = "1us"]
+    #[doc = "1 us"]
     #[inline(always)]
     pub fn _1us(self) -> &'a mut W {
         self.variant(TSWITCHSPACING_A::_1US)
@@ -238,17 +238,17 @@ impl<'a> TSWITCHSPACING_W<'a> {
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum TSAMPLESPACINGREF_A {
-    #[doc = "1: 4us"]
+    #[doc = "1: 4 us"]
     _4US = 1,
-    #[doc = "2: 2us"]
+    #[doc = "2: 2 us"]
     _2US = 2,
-    #[doc = "3: 1us"]
+    #[doc = "3: 1 us"]
     _1US = 3,
-    #[doc = "4: 0.5us"]
+    #[doc = "4: 0.5 us"]
     _500NS = 4,
-    #[doc = "5: 0.25us"]
+    #[doc = "5: 0.25 us"]
     _250NS = 5,
-    #[doc = "6: 0.125us"]
+    #[doc = "6: 0.125 us"]
     _125NS = 6,
 }
 impl From<TSAMPLESPACINGREF_A> for u8 {
@@ -325,32 +325,32 @@ impl<'a> TSAMPLESPACINGREF_W<'a> {
     pub fn variant(self, variant: TSAMPLESPACINGREF_A) -> &'a mut W {
         unsafe { self.bits(variant.into()) }
     }
-    #[doc = "4us"]
+    #[doc = "4 us"]
     #[inline(always)]
     pub fn _4us(self) -> &'a mut W {
         self.variant(TSAMPLESPACINGREF_A::_4US)
     }
-    #[doc = "2us"]
+    #[doc = "2 us"]
     #[inline(always)]
     pub fn _2us(self) -> &'a mut W {
         self.variant(TSAMPLESPACINGREF_A::_2US)
     }
-    #[doc = "1us"]
+    #[doc = "1 us"]
     #[inline(always)]
     pub fn _1us(self) -> &'a mut W {
         self.variant(TSAMPLESPACINGREF_A::_1US)
     }
-    #[doc = "0.5us"]
+    #[doc = "0.5 us"]
     #[inline(always)]
     pub fn _500ns(self) -> &'a mut W {
         self.variant(TSAMPLESPACINGREF_A::_500NS)
     }
-    #[doc = "0.25us"]
+    #[doc = "0.25 us"]
     #[inline(always)]
     pub fn _250ns(self) -> &'a mut W {
         self.variant(TSAMPLESPACINGREF_A::_250NS)
     }
-    #[doc = "0.125us"]
+    #[doc = "0.125 us"]
     #[inline(always)]
     pub fn _125ns(self) -> &'a mut W {
         self.variant(TSAMPLESPACINGREF_A::_125NS)
@@ -450,17 +450,17 @@ impl<'a> SAMPLETYPE_W<'a> {
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum TSAMPLESPACING_A {
-    #[doc = "1: 4us"]
+    #[doc = "1: 4 us"]
     _4US = 1,
-    #[doc = "2: 2us"]
+    #[doc = "2: 2 us"]
     _2US = 2,
-    #[doc = "3: 1us"]
+    #[doc = "3: 1 us"]
     _1US = 3,
-    #[doc = "4: 0.5us"]
+    #[doc = "4: 0.5 us"]
     _500NS = 4,
-    #[doc = "5: 0.25us"]
+    #[doc = "5: 0.25 us"]
     _250NS = 5,
-    #[doc = "6: 0.125us"]
+    #[doc = "6: 0.125 us"]
     _125NS = 6,
 }
 impl From<TSAMPLESPACING_A> for u8 {
@@ -537,32 +537,32 @@ impl<'a> TSAMPLESPACING_W<'a> {
     pub fn variant(self, variant: TSAMPLESPACING_A) -> &'a mut W {
         unsafe { self.bits(variant.into()) }
     }
-    #[doc = "4us"]
+    #[doc = "4 us"]
     #[inline(always)]
     pub fn _4us(self) -> &'a mut W {
         self.variant(TSAMPLESPACING_A::_4US)
     }
-    #[doc = "2us"]
+    #[doc = "2 us"]
     #[inline(always)]
     pub fn _2us(self) -> &'a mut W {
         self.variant(TSAMPLESPACING_A::_2US)
     }
-    #[doc = "1us"]
+    #[doc = "1 us"]
     #[inline(always)]
     pub fn _1us(self) -> &'a mut W {
         self.variant(TSAMPLESPACING_A::_1US)
     }
-    #[doc = "0.5us"]
+    #[doc = "0.5 us"]
     #[inline(always)]
     pub fn _500ns(self) -> &'a mut W {
         self.variant(TSAMPLESPACING_A::_500NS)
     }
-    #[doc = "0.25us"]
+    #[doc = "0.25 us"]
     #[inline(always)]
     pub fn _250ns(self) -> &'a mut W {
         self.variant(TSAMPLESPACING_A::_250NS)
     }
-    #[doc = "0.125us"]
+    #[doc = "0.125 us"]
     #[inline(always)]
     pub fn _125ns(self) -> &'a mut W {
         self.variant(TSAMPLESPACING_A::_125NS)

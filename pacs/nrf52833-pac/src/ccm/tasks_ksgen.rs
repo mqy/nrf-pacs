@@ -19,7 +19,7 @@ impl From<crate::W<TASKS_KSGEN_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Start generation of key-stream. This operation will stop by itself when completed.\n\nValue on reset: 0"]
+#[doc = "Start generation of keystream. This operation will stop by itself when completed.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum TASKS_KSGEN_AW {
     #[doc = "1: Trigger task"]
@@ -31,7 +31,7 @@ impl From<TASKS_KSGEN_AW> for bool {
         variant as u8 != 0
     }
 }
-#[doc = "Field `TASKS_KSGEN` writer - Start generation of key-stream. This operation will stop by itself when completed."]
+#[doc = "Field `TASKS_KSGEN` writer - Start generation of keystream. This operation will stop by itself when completed."]
 pub struct TASKS_KSGEN_W<'a> {
     w: &'a mut W,
 }
@@ -64,7 +64,7 @@ impl<'a> TASKS_KSGEN_W<'a> {
     }
 }
 impl W {
-    #[doc = "Bit 0 - Start generation of key-stream. This operation will stop by itself when completed."]
+    #[doc = "Bit 0 - Start generation of keystream. This operation will stop by itself when completed."]
     #[inline(always)]
     pub fn tasks_ksgen(&mut self) -> TASKS_KSGEN_W {
         TASKS_KSGEN_W { w: self }
@@ -76,7 +76,7 @@ impl W {
         self
     }
 }
-#[doc = "Start generation of key-stream. This operation will stop by itself when completed.\n\nThis register you can [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [tasks_ksgen](index.html) module"]
+#[doc = "Start generation of keystream. This operation will stop by itself when completed.\n\nThis register you can [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [tasks_ksgen](index.html) module"]
 pub struct TASKS_KSGEN_SPEC;
 impl crate::RegisterSpec for TASKS_KSGEN_SPEC {
     type Ux = u32;

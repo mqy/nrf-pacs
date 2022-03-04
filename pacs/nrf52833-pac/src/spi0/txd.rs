@@ -34,7 +34,7 @@ impl From<crate::W<TXD_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `TXD` reader - TX data to send. Double buffered"]
+#[doc = "Field `TXD` reader - TX data to send. Double buffered."]
 pub struct TXD_R(crate::FieldReader<u8, u8>);
 impl TXD_R {
     #[inline(always)]
@@ -49,7 +49,7 @@ impl core::ops::Deref for TXD_R {
         &self.0
     }
 }
-#[doc = "Field `TXD` writer - TX data to send. Double buffered"]
+#[doc = "Field `TXD` writer - TX data to send. Double buffered."]
 pub struct TXD_W<'a> {
     w: &'a mut W,
 }
@@ -62,14 +62,14 @@ impl<'a> TXD_W<'a> {
     }
 }
 impl R {
-    #[doc = "Bits 0:7 - TX data to send. Double buffered"]
+    #[doc = "Bits 0:7 - TX data to send. Double buffered."]
     #[inline(always)]
     pub fn txd(&self) -> TXD_R {
         TXD_R::new((self.bits & 0xff) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 0:7 - TX data to send. Double buffered"]
+    #[doc = "Bits 0:7 - TX data to send. Double buffered."]
     #[inline(always)]
     pub fn txd(&mut self) -> TXD_W {
         TXD_W { w: self }

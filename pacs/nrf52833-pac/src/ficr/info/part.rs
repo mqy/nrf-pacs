@@ -17,6 +17,8 @@ impl From<crate::R<PART_SPEC>> for R {
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u32)]
 pub enum PART_A {
+    #[doc = "337952: nRF52820"]
+    N52820 = 337952,
     #[doc = "337971: nRF52833"]
     N52833 = 337971,
     #[doc = "337984: nRF52840"]
@@ -41,11 +43,17 @@ impl PART_R {
     #[inline(always)]
     pub fn variant(&self) -> Option<PART_A> {
         match self.bits {
+            337952 => Some(PART_A::N52820),
             337971 => Some(PART_A::N52833),
             337984 => Some(PART_A::N52840),
             4294967295 => Some(PART_A::UNSPECIFIED),
             _ => None,
         }
+    }
+    #[doc = "Checks if the value of the field is `N52820`"]
+    #[inline(always)]
+    pub fn is_n52820(&self) -> bool {
+        **self == PART_A::N52820
     }
     #[doc = "Checks if the value of the field is `N52833`"]
     #[inline(always)]

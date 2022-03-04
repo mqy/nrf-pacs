@@ -34,7 +34,7 @@ impl From<crate::W<EVENTS_ENDKSGEN_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Key-stream generation complete\n\nValue on reset: 0"]
+#[doc = "Keystream generation complete\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum EVENTS_ENDKSGEN_A {
     #[doc = "0: Event not generated"]
@@ -48,7 +48,7 @@ impl From<EVENTS_ENDKSGEN_A> for bool {
         variant as u8 != 0
     }
 }
-#[doc = "Field `EVENTS_ENDKSGEN` reader - Key-stream generation complete"]
+#[doc = "Field `EVENTS_ENDKSGEN` reader - Keystream generation complete"]
 pub struct EVENTS_ENDKSGEN_R(crate::FieldReader<bool, EVENTS_ENDKSGEN_A>);
 impl EVENTS_ENDKSGEN_R {
     #[inline(always)]
@@ -81,7 +81,7 @@ impl core::ops::Deref for EVENTS_ENDKSGEN_R {
         &self.0
     }
 }
-#[doc = "Field `EVENTS_ENDKSGEN` writer - Key-stream generation complete"]
+#[doc = "Field `EVENTS_ENDKSGEN` writer - Keystream generation complete"]
 pub struct EVENTS_ENDKSGEN_W<'a> {
     w: &'a mut W,
 }
@@ -119,14 +119,14 @@ impl<'a> EVENTS_ENDKSGEN_W<'a> {
     }
 }
 impl R {
-    #[doc = "Bit 0 - Key-stream generation complete"]
+    #[doc = "Bit 0 - Keystream generation complete"]
     #[inline(always)]
     pub fn events_endksgen(&self) -> EVENTS_ENDKSGEN_R {
         EVENTS_ENDKSGEN_R::new((self.bits & 0x01) != 0)
     }
 }
 impl W {
-    #[doc = "Bit 0 - Key-stream generation complete"]
+    #[doc = "Bit 0 - Keystream generation complete"]
     #[inline(always)]
     pub fn events_endksgen(&mut self) -> EVENTS_ENDKSGEN_W {
         EVENTS_ENDKSGEN_W { w: self }
@@ -138,7 +138,7 @@ impl W {
         self
     }
 }
-#[doc = "Key-stream generation complete\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [events_endksgen](index.html) module"]
+#[doc = "Keystream generation complete\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [events_endksgen](index.html) module"]
 pub struct EVENTS_ENDKSGEN_SPEC;
 impl crate::RegisterSpec for EVENTS_ENDKSGEN_SPEC {
     type Ux = u32;

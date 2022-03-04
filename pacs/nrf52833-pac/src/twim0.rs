@@ -21,7 +21,7 @@ pub struct RegisterBlock {
     #[doc = "0x124 - TWI error"]
     pub events_error: crate::Reg<events_error::EVENTS_ERROR_SPEC>,
     _reserved7: [u8; 0x20],
-    #[doc = "0x148 - Last byte has been sent out after the SUSPEND task has been issued, TWI traffic is now suspended."]
+    #[doc = "0x148 - SUSPEND task has been issued, TWI traffic is now suspended."]
     pub events_suspended: crate::Reg<events_suspended::EVENTS_SUSPENDED_SPEC>,
     #[doc = "0x14c - Receive sequence started"]
     pub events_rxstarted: crate::Reg<events_rxstarted::EVENTS_RXSTARTED_SPEC>,
@@ -134,7 +134,7 @@ pub type EVENTS_ERROR = crate::Reg<events_error::EVENTS_ERROR_SPEC>;
 pub mod events_error;
 #[doc = "EVENTS_SUSPENDED register accessor: an alias for `Reg<EVENTS_SUSPENDED_SPEC>`"]
 pub type EVENTS_SUSPENDED = crate::Reg<events_suspended::EVENTS_SUSPENDED_SPEC>;
-#[doc = "Last byte has been sent out after the SUSPEND task has been issued, TWI traffic is now suspended."]
+#[doc = "SUSPEND task has been issued, TWI traffic is now suspended."]
 pub mod events_suspended;
 #[doc = "EVENTS_RXSTARTED register accessor: an alias for `Reg<EVENTS_RXSTARTED_SPEC>`"]
 pub type EVENTS_RXSTARTED = crate::Reg<events_rxstarted::EVENTS_RXSTARTED_SPEC>;

@@ -34,7 +34,7 @@ impl From<crate::W<PCNF0_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `LFLEN` reader - Length on air of LENGTH field in number of bits."]
+#[doc = "Field `LFLEN` reader - Length on air of LENGTH field in number of bits"]
 pub struct LFLEN_R(crate::FieldReader<u8, u8>);
 impl LFLEN_R {
     #[inline(always)]
@@ -49,7 +49,7 @@ impl core::ops::Deref for LFLEN_R {
         &self.0
     }
 }
-#[doc = "Field `LFLEN` writer - Length on air of LENGTH field in number of bits."]
+#[doc = "Field `LFLEN` writer - Length on air of LENGTH field in number of bits"]
 pub struct LFLEN_W<'a> {
     w: &'a mut W,
 }
@@ -61,7 +61,7 @@ impl<'a> LFLEN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `S0LEN` reader - Length on air of S0 field in number of bytes."]
+#[doc = "Field `S0LEN` reader - Length on air of S0 field in number of bytes"]
 pub struct S0LEN_R(crate::FieldReader<bool, bool>);
 impl S0LEN_R {
     #[inline(always)]
@@ -76,7 +76,7 @@ impl core::ops::Deref for S0LEN_R {
         &self.0
     }
 }
-#[doc = "Field `S0LEN` writer - Length on air of S0 field in number of bytes."]
+#[doc = "Field `S0LEN` writer - Length on air of S0 field in number of bytes"]
 pub struct S0LEN_W<'a> {
     w: &'a mut W,
 }
@@ -98,7 +98,7 @@ impl<'a> S0LEN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `S1LEN` reader - Length on air of S1 field in number of bits."]
+#[doc = "Field `S1LEN` reader - Length on air of S1 field in number of bits"]
 pub struct S1LEN_R(crate::FieldReader<u8, u8>);
 impl S1LEN_R {
     #[inline(always)]
@@ -113,7 +113,7 @@ impl core::ops::Deref for S1LEN_R {
         &self.0
     }
 }
-#[doc = "Field `S1LEN` writer - Length on air of S1 field in number of bits."]
+#[doc = "Field `S1LEN` writer - Length on air of S1 field in number of bits"]
 pub struct S1LEN_W<'a> {
     w: &'a mut W,
 }
@@ -450,17 +450,17 @@ impl<'a> TERMLEN_W<'a> {
     }
 }
 impl R {
-    #[doc = "Bits 0:3 - Length on air of LENGTH field in number of bits."]
+    #[doc = "Bits 0:3 - Length on air of LENGTH field in number of bits"]
     #[inline(always)]
     pub fn lflen(&self) -> LFLEN_R {
         LFLEN_R::new((self.bits & 0x0f) as u8)
     }
-    #[doc = "Bit 8 - Length on air of S0 field in number of bytes."]
+    #[doc = "Bit 8 - Length on air of S0 field in number of bytes"]
     #[inline(always)]
     pub fn s0len(&self) -> S0LEN_R {
         S0LEN_R::new(((self.bits >> 8) & 0x01) != 0)
     }
-    #[doc = "Bits 16:19 - Length on air of S1 field in number of bits."]
+    #[doc = "Bits 16:19 - Length on air of S1 field in number of bits"]
     #[inline(always)]
     pub fn s1len(&self) -> S1LEN_R {
         S1LEN_R::new(((self.bits >> 16) & 0x0f) as u8)
@@ -492,17 +492,17 @@ impl R {
     }
 }
 impl W {
-    #[doc = "Bits 0:3 - Length on air of LENGTH field in number of bits."]
+    #[doc = "Bits 0:3 - Length on air of LENGTH field in number of bits"]
     #[inline(always)]
     pub fn lflen(&mut self) -> LFLEN_W {
         LFLEN_W { w: self }
     }
-    #[doc = "Bit 8 - Length on air of S0 field in number of bytes."]
+    #[doc = "Bit 8 - Length on air of S0 field in number of bytes"]
     #[inline(always)]
     pub fn s0len(&mut self) -> S0LEN_W {
         S0LEN_W { w: self }
     }
-    #[doc = "Bits 16:19 - Length on air of S1 field in number of bits."]
+    #[doc = "Bits 16:19 - Length on air of S1 field in number of bits"]
     #[inline(always)]
     pub fn s1len(&mut self) -> S1LEN_W {
         S1LEN_W { w: self }

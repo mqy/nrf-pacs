@@ -34,7 +34,7 @@ impl From<crate::W<MODE_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "The mode of operation to be used. The settings in this register apply whenever either the KSGEN or CRYPT tasks are triggered.\n\nValue on reset: 1"]
+#[doc = "The mode of operation to be used. Settings in this register apply whenever either the KSGEN task or the CRYPT task is triggered.\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum MODE_A {
     #[doc = "0: AES CCM packet encryption mode"]
@@ -48,7 +48,7 @@ impl From<MODE_A> for bool {
         variant as u8 != 0
     }
 }
-#[doc = "Field `MODE` reader - The mode of operation to be used. The settings in this register apply whenever either the KSGEN or CRYPT tasks are triggered."]
+#[doc = "Field `MODE` reader - The mode of operation to be used. Settings in this register apply whenever either the KSGEN task or the CRYPT task is triggered."]
 pub struct MODE_R(crate::FieldReader<bool, MODE_A>);
 impl MODE_R {
     #[inline(always)]
@@ -81,7 +81,7 @@ impl core::ops::Deref for MODE_R {
         &self.0
     }
 }
-#[doc = "Field `MODE` writer - The mode of operation to be used. The settings in this register apply whenever either the KSGEN or CRYPT tasks are triggered."]
+#[doc = "Field `MODE` writer - The mode of operation to be used. Settings in this register apply whenever either the KSGEN task or the CRYPT task is triggered."]
 pub struct MODE_W<'a> {
     w: &'a mut W,
 }
@@ -126,9 +126,9 @@ pub enum DATARATE_A {
     _1MBIT = 0,
     #[doc = "1: 2 Mbps"]
     _2MBIT = 1,
-    #[doc = "2: 125 Kbps"]
+    #[doc = "2: 125 kbps"]
     _125KBPS = 2,
-    #[doc = "3: 500 Kbps"]
+    #[doc = "3: 500 kbps"]
     _500KBPS = 3,
 }
 impl From<DATARATE_A> for u8 {
@@ -203,12 +203,12 @@ impl<'a> DATARATE_W<'a> {
     pub fn _2mbit(self) -> &'a mut W {
         self.variant(DATARATE_A::_2MBIT)
     }
-    #[doc = "125 Kbps"]
+    #[doc = "125 kbps"]
     #[inline(always)]
     pub fn _125kbps(self) -> &'a mut W {
         self.variant(DATARATE_A::_125KBPS)
     }
-    #[doc = "500 Kbps"]
+    #[doc = "500 kbps"]
     #[inline(always)]
     pub fn _500kbps(self) -> &'a mut W {
         self.variant(DATARATE_A::_500KBPS)
@@ -223,9 +223,9 @@ impl<'a> DATARATE_W<'a> {
 #[doc = "Packet length configuration\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum LENGTH_A {
-    #[doc = "0: Default length. Effective length of LENGTH field in encrypted/decrypted packet is 5 bits. A key-stream for packet payloads up to 27 bytes will be generated."]
+    #[doc = "0: Default length. Effective length of LENGTH field in encrypted/decrypted packet is 5 bits. A keystream for packet payloads up to 27 bytes will be generated."]
     DEFAULT = 0,
-    #[doc = "1: Extended length. Effective length of LENGTH field in encrypted/decrypted packet is 8 bits. A key-stream for packet payloads up to MAXPACKETSIZE bytes will be generated."]
+    #[doc = "1: Extended length. Effective length of LENGTH field in encrypted/decrypted packet is 8 bits. A keystream for packet payloads up to MAXPACKETSIZE bytes will be generated."]
     EXTENDED = 1,
 }
 impl From<LENGTH_A> for bool {
@@ -277,12 +277,12 @@ impl<'a> LENGTH_W<'a> {
     pub fn variant(self, variant: LENGTH_A) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Default length. Effective length of LENGTH field in encrypted/decrypted packet is 5 bits. A key-stream for packet payloads up to 27 bytes will be generated."]
+    #[doc = "Default length. Effective length of LENGTH field in encrypted/decrypted packet is 5 bits. A keystream for packet payloads up to 27 bytes will be generated."]
     #[inline(always)]
     pub fn default(self) -> &'a mut W {
         self.variant(LENGTH_A::DEFAULT)
     }
-    #[doc = "Extended length. Effective length of LENGTH field in encrypted/decrypted packet is 8 bits. A key-stream for packet payloads up to MAXPACKETSIZE bytes will be generated."]
+    #[doc = "Extended length. Effective length of LENGTH field in encrypted/decrypted packet is 8 bits. A keystream for packet payloads up to MAXPACKETSIZE bytes will be generated."]
     #[inline(always)]
     pub fn extended(self) -> &'a mut W {
         self.variant(LENGTH_A::EXTENDED)
@@ -305,7 +305,7 @@ impl<'a> LENGTH_W<'a> {
     }
 }
 impl R {
-    #[doc = "Bit 0 - The mode of operation to be used. The settings in this register apply whenever either the KSGEN or CRYPT tasks are triggered."]
+    #[doc = "Bit 0 - The mode of operation to be used. Settings in this register apply whenever either the KSGEN task or the CRYPT task is triggered."]
     #[inline(always)]
     pub fn mode(&self) -> MODE_R {
         MODE_R::new((self.bits & 0x01) != 0)
@@ -322,7 +322,7 @@ impl R {
     }
 }
 impl W {
-    #[doc = "Bit 0 - The mode of operation to be used. The settings in this register apply whenever either the KSGEN or CRYPT tasks are triggered."]
+    #[doc = "Bit 0 - The mode of operation to be used. Settings in this register apply whenever either the KSGEN task or the CRYPT task is triggered."]
     #[inline(always)]
     pub fn mode(&mut self) -> MODE_W {
         MODE_W { w: self }

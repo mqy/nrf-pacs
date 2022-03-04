@@ -34,7 +34,7 @@ impl From<crate::W<ADDR_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `ADDR` reader - Valid word-aligned start address of region n to protect. Address must point to a flash page boundary."]
+#[doc = "Field `ADDR` reader - Start address of flash region n. The start address must point to a flash page boundary."]
 pub struct ADDR_R(crate::FieldReader<u32, u32>);
 impl ADDR_R {
     #[inline(always)]
@@ -49,7 +49,7 @@ impl core::ops::Deref for ADDR_R {
         &self.0
     }
 }
-#[doc = "Field `ADDR` writer - Valid word-aligned start address of region n to protect. Address must point to a flash page boundary."]
+#[doc = "Field `ADDR` writer - Start address of flash region n. The start address must point to a flash page boundary."]
 pub struct ADDR_W<'a> {
     w: &'a mut W,
 }
@@ -62,14 +62,14 @@ impl<'a> ADDR_W<'a> {
     }
 }
 impl R {
-    #[doc = "Bits 0:31 - Valid word-aligned start address of region n to protect. Address must point to a flash page boundary."]
+    #[doc = "Bits 0:31 - Start address of flash region n. The start address must point to a flash page boundary."]
     #[inline(always)]
     pub fn addr(&self) -> ADDR_R {
         ADDR_R::new(self.bits)
     }
 }
 impl W {
-    #[doc = "Bits 0:31 - Valid word-aligned start address of region n to protect. Address must point to a flash page boundary."]
+    #[doc = "Bits 0:31 - Start address of flash region n. The start address must point to a flash page boundary."]
     #[inline(always)]
     pub fn addr(&mut self) -> ADDR_W {
         ADDR_W { w: self }
@@ -81,7 +81,7 @@ impl W {
         self
     }
 }
-#[doc = "Description cluster: Configure the word-aligned start address of region n to protect\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [addr](index.html) module"]
+#[doc = "Description cluster: Start address of region to protect. The start address must be word-aligned.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [addr](index.html) module"]
 pub struct ADDR_SPEC;
 impl crate::RegisterSpec for ADDR_SPEC {
     type Ux = u32;

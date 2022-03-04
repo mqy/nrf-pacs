@@ -21,6 +21,12 @@ pub enum VARIANT_A {
     AAAA = 1094795585,
     #[doc = "1094795586: AAAB"]
     AAAB = 1094795586,
+    #[doc = "1094795568: AAA0"]
+    AAA0 = 1094795568,
+    #[doc = "1094795569: AAA1"]
+    AAA1 = 1094795569,
+    #[doc = "1094795824: AAB0"]
+    AAB0 = 1094795824,
     #[doc = "4294967295: Unspecified"]
     UNSPECIFIED = 4294967295,
 }
@@ -43,6 +49,9 @@ impl VARIANT_R {
         match self.bits {
             1094795585 => Some(VARIANT_A::AAAA),
             1094795586 => Some(VARIANT_A::AAAB),
+            1094795568 => Some(VARIANT_A::AAA0),
+            1094795569 => Some(VARIANT_A::AAA1),
+            1094795824 => Some(VARIANT_A::AAB0),
             4294967295 => Some(VARIANT_A::UNSPECIFIED),
             _ => None,
         }
@@ -56,6 +65,21 @@ impl VARIANT_R {
     #[inline(always)]
     pub fn is_aaab(&self) -> bool {
         **self == VARIANT_A::AAAB
+    }
+    #[doc = "Checks if the value of the field is `AAA0`"]
+    #[inline(always)]
+    pub fn is_aaa0(&self) -> bool {
+        **self == VARIANT_A::AAA0
+    }
+    #[doc = "Checks if the value of the field is `AAA1`"]
+    #[inline(always)]
+    pub fn is_aaa1(&self) -> bool {
+        **self == VARIANT_A::AAA1
+    }
+    #[doc = "Checks if the value of the field is `AAB0`"]
+    #[inline(always)]
+    pub fn is_aab0(&self) -> bool {
+        **self == VARIANT_A::AAB0
     }
     #[doc = "Checks if the value of the field is `UNSPECIFIED`"]
     #[inline(always)]

@@ -72,7 +72,7 @@ pub enum BAUDRATE_A {
     BAUD460800 = 121634816,
     #[doc = "251658240: 921600 baud (actual rate: 941176)"]
     BAUD921600 = 251658240,
-    #[doc = "268435456: 1Mega baud"]
+    #[doc = "268435456: 1 megabaud"]
     BAUD1M = 268435456,
 }
 impl From<BAUDRATE_A> for u32 {
@@ -306,7 +306,7 @@ impl<'a> BAUDRATE_W<'a> {
     pub fn baud921600(self) -> &'a mut W {
         self.variant(BAUDRATE_A::BAUD921600)
     }
-    #[doc = "1Mega baud"]
+    #[doc = "1 megabaud"]
     #[inline(always)]
     pub fn baud1m(self) -> &'a mut W {
         self.variant(BAUDRATE_A::BAUD1M)

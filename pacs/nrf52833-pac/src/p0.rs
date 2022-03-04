@@ -18,7 +18,7 @@ pub struct RegisterBlock {
     pub dirclr: crate::Reg<dirclr::DIRCLR_SPEC>,
     #[doc = "0x520 - Latch register indicating what GPIO pins that have met the criteria set in the PIN_CNF\\[n\\].SENSE registers"]
     pub latch: crate::Reg<latch::LATCH_SPEC>,
-    #[doc = "0x524 - Select between default DETECT signal behaviour and LDETECT mode"]
+    #[doc = "0x524 - Select between default DETECT signal behavior and LDETECT mode"]
     pub detectmode: crate::Reg<detectmode::DETECTMODE_SPEC>,
     _reserved9: [u8; 0x01d8],
     #[doc = "0x700..0x780 - Description collection: Configuration of GPIO pins"]
@@ -58,7 +58,7 @@ pub type LATCH = crate::Reg<latch::LATCH_SPEC>;
 pub mod latch;
 #[doc = "DETECTMODE register accessor: an alias for `Reg<DETECTMODE_SPEC>`"]
 pub type DETECTMODE = crate::Reg<detectmode::DETECTMODE_SPEC>;
-#[doc = "Select between default DETECT signal behaviour and LDETECT mode"]
+#[doc = "Select between default DETECT signal behavior and LDETECT mode"]
 pub mod detectmode;
 #[doc = "PIN_CNF register accessor: an alias for `Reg<PIN_CNF_SPEC>`"]
 pub type PIN_CNF = crate::Reg<pin_cnf::PIN_CNF_SPEC>;

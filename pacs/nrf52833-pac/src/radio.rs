@@ -54,7 +54,7 @@ pub struct RegisterBlock {
     pub events_crcerror: crate::Reg<events_crcerror::EVENTS_CRCERROR_SPEC>,
     #[doc = "0x138 - IEEE 802.15.4 length field received"]
     pub events_framestart: crate::Reg<events_framestart::EVENTS_FRAMESTART_SPEC>,
-    #[doc = "0x13c - Sampling of energy detection complete. A new ED sample is ready for readout from the RADIO.EDSAMPLE register"]
+    #[doc = "0x13c - Sampling of energy detection complete. A new ED sample is ready for readout from the RADIO.EDSAMPLE register."]
     pub events_edend: crate::Reg<events_edend::EVENTS_EDEND_SPEC>,
     #[doc = "0x140 - The sampling of energy detection has stopped"]
     pub events_edstopped: crate::Reg<events_edstopped::EVENTS_EDSTOPPED_SPEC>,
@@ -319,7 +319,7 @@ pub type EVENTS_FRAMESTART = crate::Reg<events_framestart::EVENTS_FRAMESTART_SPE
 pub mod events_framestart;
 #[doc = "EVENTS_EDEND register accessor: an alias for `Reg<EVENTS_EDEND_SPEC>`"]
 pub type EVENTS_EDEND = crate::Reg<events_edend::EVENTS_EDEND_SPEC>;
-#[doc = "Sampling of energy detection complete. A new ED sample is ready for readout from the RADIO.EDSAMPLE register"]
+#[doc = "Sampling of energy detection complete. A new ED sample is ready for readout from the RADIO.EDSAMPLE register."]
 pub mod events_edend;
 #[doc = "EVENTS_EDSTOPPED register accessor: an alias for `Reg<EVENTS_EDSTOPPED_SPEC>`"]
 pub type EVENTS_EDSTOPPED = crate::Reg<events_edstopped::EVENTS_EDSTOPPED_SPEC>;

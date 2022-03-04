@@ -34,7 +34,7 @@ impl From<crate::W<MAXPACKETSIZE_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `MAXPACKETSIZE` reader - Length of key-stream generated when MODE.LENGTH = Extended. This value must be greater or equal to the subsequent packet payload to be encrypted/decrypted."]
+#[doc = "Field `MAXPACKETSIZE` reader - Length of keystream generated when MODE.LENGTH = Extended. This value must be greater than or equal to the subsequent packet payload to be encrypted/decrypted."]
 pub struct MAXPACKETSIZE_R(crate::FieldReader<u8, u8>);
 impl MAXPACKETSIZE_R {
     #[inline(always)]
@@ -49,7 +49,7 @@ impl core::ops::Deref for MAXPACKETSIZE_R {
         &self.0
     }
 }
-#[doc = "Field `MAXPACKETSIZE` writer - Length of key-stream generated when MODE.LENGTH = Extended. This value must be greater or equal to the subsequent packet payload to be encrypted/decrypted."]
+#[doc = "Field `MAXPACKETSIZE` writer - Length of keystream generated when MODE.LENGTH = Extended. This value must be greater than or equal to the subsequent packet payload to be encrypted/decrypted."]
 pub struct MAXPACKETSIZE_W<'a> {
     w: &'a mut W,
 }
@@ -62,14 +62,14 @@ impl<'a> MAXPACKETSIZE_W<'a> {
     }
 }
 impl R {
-    #[doc = "Bits 0:7 - Length of key-stream generated when MODE.LENGTH = Extended. This value must be greater or equal to the subsequent packet payload to be encrypted/decrypted."]
+    #[doc = "Bits 0:7 - Length of keystream generated when MODE.LENGTH = Extended. This value must be greater than or equal to the subsequent packet payload to be encrypted/decrypted."]
     #[inline(always)]
     pub fn maxpacketsize(&self) -> MAXPACKETSIZE_R {
         MAXPACKETSIZE_R::new((self.bits & 0xff) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 0:7 - Length of key-stream generated when MODE.LENGTH = Extended. This value must be greater or equal to the subsequent packet payload to be encrypted/decrypted."]
+    #[doc = "Bits 0:7 - Length of keystream generated when MODE.LENGTH = Extended. This value must be greater than or equal to the subsequent packet payload to be encrypted/decrypted."]
     #[inline(always)]
     pub fn maxpacketsize(&mut self) -> MAXPACKETSIZE_W {
         MAXPACKETSIZE_W { w: self }
@@ -81,7 +81,7 @@ impl W {
         self
     }
 }
-#[doc = "Length of key-stream generated when MODE.LENGTH = Extended.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [maxpacketsize](index.html) module"]
+#[doc = "Length of keystream generated when MODE.LENGTH = Extended\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [maxpacketsize](index.html) module"]
 pub struct MAXPACKETSIZE_SPEC;
 impl crate::RegisterSpec for MAXPACKETSIZE_SPEC {
     type Ux = u32;

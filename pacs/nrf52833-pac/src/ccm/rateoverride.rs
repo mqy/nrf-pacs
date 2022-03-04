@@ -34,7 +34,7 @@ impl From<crate::W<RATEOVERRIDE_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Data rate override setting.\n\nValue on reset: 0"]
+#[doc = "Data rate override setting\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum RATEOVERRIDE_A {
@@ -42,9 +42,9 @@ pub enum RATEOVERRIDE_A {
     _1MBIT = 0,
     #[doc = "1: 2 Mbps"]
     _2MBIT = 1,
-    #[doc = "2: 125 Kbps"]
+    #[doc = "2: 125 kbps"]
     _125KBPS = 2,
-    #[doc = "3: 500 Kbps"]
+    #[doc = "3: 500 kbps"]
     _500KBPS = 3,
 }
 impl From<RATEOVERRIDE_A> for u8 {
@@ -53,7 +53,7 @@ impl From<RATEOVERRIDE_A> for u8 {
         variant as _
     }
 }
-#[doc = "Field `RATEOVERRIDE` reader - Data rate override setting."]
+#[doc = "Field `RATEOVERRIDE` reader - Data rate override setting"]
 pub struct RATEOVERRIDE_R(crate::FieldReader<u8, RATEOVERRIDE_A>);
 impl RATEOVERRIDE_R {
     #[inline(always)]
@@ -99,7 +99,7 @@ impl core::ops::Deref for RATEOVERRIDE_R {
         &self.0
     }
 }
-#[doc = "Field `RATEOVERRIDE` writer - Data rate override setting."]
+#[doc = "Field `RATEOVERRIDE` writer - Data rate override setting"]
 pub struct RATEOVERRIDE_W<'a> {
     w: &'a mut W,
 }
@@ -119,12 +119,12 @@ impl<'a> RATEOVERRIDE_W<'a> {
     pub fn _2mbit(self) -> &'a mut W {
         self.variant(RATEOVERRIDE_A::_2MBIT)
     }
-    #[doc = "125 Kbps"]
+    #[doc = "125 kbps"]
     #[inline(always)]
     pub fn _125kbps(self) -> &'a mut W {
         self.variant(RATEOVERRIDE_A::_125KBPS)
     }
-    #[doc = "500 Kbps"]
+    #[doc = "500 kbps"]
     #[inline(always)]
     pub fn _500kbps(self) -> &'a mut W {
         self.variant(RATEOVERRIDE_A::_500KBPS)
@@ -137,14 +137,14 @@ impl<'a> RATEOVERRIDE_W<'a> {
     }
 }
 impl R {
-    #[doc = "Bits 0:1 - Data rate override setting."]
+    #[doc = "Bits 0:1 - Data rate override setting"]
     #[inline(always)]
     pub fn rateoverride(&self) -> RATEOVERRIDE_R {
         RATEOVERRIDE_R::new((self.bits & 0x03) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 0:1 - Data rate override setting."]
+    #[doc = "Bits 0:1 - Data rate override setting"]
     #[inline(always)]
     pub fn rateoverride(&mut self) -> RATEOVERRIDE_W {
         RATEOVERRIDE_W { w: self }

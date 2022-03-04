@@ -33,7 +33,7 @@ match"]
     _reserved12: [u8; 0x01b8],
     #[doc = "0x504 - Current COUNTER value"]
     pub counter: crate::Reg<counter::COUNTER_SPEC>,
-    #[doc = "0x508 - 12 bit prescaler for COUNTER frequency (32768/(PRESCALER+1)).Must be written when RTC is stopped"]
+    #[doc = "0x508 - 12 bit prescaler for COUNTER frequency (32768/(PRESCALER+1)). Must be written when RTC is stopped."]
     pub prescaler: crate::Reg<prescaler::PRESCALER_SPEC>,
     _reserved14: [u8; 0x34],
     #[doc = "0x540..0x550 - Description collection: Compare register n"]
@@ -94,7 +94,7 @@ pub type COUNTER = crate::Reg<counter::COUNTER_SPEC>;
 pub mod counter;
 #[doc = "PRESCALER register accessor: an alias for `Reg<PRESCALER_SPEC>`"]
 pub type PRESCALER = crate::Reg<prescaler::PRESCALER_SPEC>;
-#[doc = "12 bit prescaler for COUNTER frequency (32768/(PRESCALER+1)).Must be written when RTC is stopped"]
+#[doc = "12 bit prescaler for COUNTER frequency (32768/(PRESCALER+1)). Must be written when RTC is stopped."]
 pub mod prescaler;
 #[doc = "CC register accessor: an alias for `Reg<CC_SPEC>`"]
 pub type CC = crate::Reg<cc::CC_SPEC>;

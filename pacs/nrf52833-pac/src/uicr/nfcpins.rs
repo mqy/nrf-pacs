@@ -37,9 +37,9 @@ impl From<crate::W<NFCPINS_SPEC>> for W {
 #[doc = "Setting of pins dedicated to NFC functionality\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum PROTECT_A {
-    #[doc = "0: Operation as GPIO pins. Same protection as normal GPIO pins"]
+    #[doc = "0: Operation as GPIO pins. Same protection as normal GPIO pins."]
     DISABLED = 0,
-    #[doc = "1: Operation as NFC antenna pins. Configures the protection for NFC operation"]
+    #[doc = "1: Operation as NFC antenna pins. Configures the protection for NFC operation."]
     NFC = 1,
 }
 impl From<PROTECT_A> for bool {
@@ -91,12 +91,12 @@ impl<'a> PROTECT_W<'a> {
     pub fn variant(self, variant: PROTECT_A) -> &'a mut W {
         self.bit(variant.into())
     }
-    #[doc = "Operation as GPIO pins. Same protection as normal GPIO pins"]
+    #[doc = "Operation as GPIO pins. Same protection as normal GPIO pins."]
     #[inline(always)]
     pub fn disabled(self) -> &'a mut W {
         self.variant(PROTECT_A::DISABLED)
     }
-    #[doc = "Operation as NFC antenna pins. Configures the protection for NFC operation"]
+    #[doc = "Operation as NFC antenna pins. Configures the protection for NFC operation."]
     #[inline(always)]
     pub fn nfc(self) -> &'a mut W {
         self.variant(PROTECT_A::NFC)

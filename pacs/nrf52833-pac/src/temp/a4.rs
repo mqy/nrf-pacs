@@ -34,7 +34,7 @@ impl From<crate::W<A4_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `A4` reader - Slope of 5th piece wise linear function"]
+#[doc = "Field `A4` reader - Slope of fifth piecewise linear function"]
 pub struct A4_R(crate::FieldReader<u16, u16>);
 impl A4_R {
     #[inline(always)]
@@ -49,7 +49,7 @@ impl core::ops::Deref for A4_R {
         &self.0
     }
 }
-#[doc = "Field `A4` writer - Slope of 5th piece wise linear function"]
+#[doc = "Field `A4` writer - Slope of fifth piecewise linear function"]
 pub struct A4_W<'a> {
     w: &'a mut W,
 }
@@ -62,14 +62,14 @@ impl<'a> A4_W<'a> {
     }
 }
 impl R {
-    #[doc = "Bits 0:11 - Slope of 5th piece wise linear function"]
+    #[doc = "Bits 0:11 - Slope of fifth piecewise linear function"]
     #[inline(always)]
     pub fn a4(&self) -> A4_R {
         A4_R::new((self.bits & 0x0fff) as u16)
     }
 }
 impl W {
-    #[doc = "Bits 0:11 - Slope of 5th piece wise linear function"]
+    #[doc = "Bits 0:11 - Slope of fifth piecewise linear function"]
     #[inline(always)]
     pub fn a4(&mut self) -> A4_W {
         A4_W { w: self }
@@ -81,7 +81,7 @@ impl W {
         self
     }
 }
-#[doc = "Slope of 5th piece wise linear function\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [a4](index.html) module"]
+#[doc = "Slope of fifth piecewise linear function\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [a4](index.html) module"]
 pub struct A4_SPEC;
 impl crate::RegisterSpec for A4_SPEC {
     type Ux = u32;

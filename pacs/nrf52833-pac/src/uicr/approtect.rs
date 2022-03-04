@@ -38,8 +38,10 @@ impl From<crate::W<APPROTECT_SPEC>> for W {
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum PALL_A {
-    #[doc = "255: Disable"]
+    #[doc = "255: Hardware disable of access port protection for devices where access port protection is controlled by hardware"]
     DISABLED = 255,
+    #[doc = "90: Hardware disable of access port protection for devices where access port protection is controlled by hardware and software"]
+    HWDISABLED = 90,
     #[doc = "0: Enable"]
     ENABLED = 0,
 }
@@ -61,6 +63,7 @@ impl PALL_R {
     pub fn variant(&self) -> Option<PALL_A> {
         match self.bits {
             255 => Some(PALL_A::DISABLED),
+            90 => Some(PALL_A::HWDISABLED),
             0 => Some(PALL_A::ENABLED),
             _ => None,
         }
@@ -69,6 +72,11 @@ impl PALL_R {
     #[inline(always)]
     pub fn is_disabled(&self) -> bool {
         **self == PALL_A::DISABLED
+    }
+    #[doc = "Checks if the value of the field is `HWDISABLED`"]
+    #[inline(always)]
+    pub fn is_hw_disabled(&self) -> bool {
+        **self == PALL_A::HWDISABLED
     }
     #[doc = "Checks if the value of the field is `ENABLED`"]
     #[inline(always)]
@@ -93,10 +101,15 @@ impl<'a> PALL_W<'a> {
     pub fn variant(self, variant: PALL_A) -> &'a mut W {
         unsafe { self.bits(variant.into()) }
     }
-    #[doc = "Disable"]
+    #[doc = "Hardware disable of access port protection for devices where access port protection is controlled by hardware"]
     #[inline(always)]
     pub fn disabled(self) -> &'a mut W {
         self.variant(PALL_A::DISABLED)
+    }
+    #[doc = "Hardware disable of access port protection for devices where access port protection is controlled by hardware and software"]
+    #[inline(always)]
+    pub fn hw_disabled(self) -> &'a mut W {
+        self.variant(PALL_A::HWDISABLED)
     }
     #[doc = "Enable"]
     #[inline(always)]

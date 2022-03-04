@@ -34,9 +34,9 @@ pub mod tasks_chg;
 #[doc = r"Register block"]
 #[repr(C)]
 pub struct CH {
-    #[doc = "0x00 - Description cluster: Channel n event end-point"]
+    #[doc = "0x00 - Description cluster: Channel n event endpoint"]
     pub eep: crate::Reg<self::ch::eep::EEP_SPEC>,
-    #[doc = "0x04 - Description cluster: Channel n task end-point"]
+    #[doc = "0x04 - Description cluster: Channel n task endpoint"]
     pub tep: crate::Reg<self::ch::tep::TEP_SPEC>,
 }
 #[doc = r"Register block"]
@@ -45,7 +45,7 @@ pub mod ch;
 #[doc = r"Register block"]
 #[repr(C)]
 pub struct FORK {
-    #[doc = "0x00 - Description cluster: Channel n task end-point"]
+    #[doc = "0x00 - Description cluster: Channel n task endpoint"]
     pub tep: crate::Reg<self::fork::tep::TEP_SPEC>,
 }
 #[doc = r"Register block"]

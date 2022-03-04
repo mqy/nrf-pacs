@@ -13,7 +13,7 @@ impl From<crate::R<ACC_SPEC>> for R {
         R(reader)
     }
 }
-#[doc = "Field `ACC` reader - Register accumulating all valid samples (not double transition) read from the SAMPLE register"]
+#[doc = "Field `ACC` reader - Register accumulating all valid samples (not double transition) read from the SAMPLE register."]
 pub struct ACC_R(crate::FieldReader<u32, u32>);
 impl ACC_R {
     #[inline(always)]
@@ -29,7 +29,7 @@ impl core::ops::Deref for ACC_R {
     }
 }
 impl R {
-    #[doc = "Bits 0:31 - Register accumulating all valid samples (not double transition) read from the SAMPLE register"]
+    #[doc = "Bits 0:31 - Register accumulating all valid samples (not double transition) read from the SAMPLE register."]
     #[inline(always)]
     pub fn acc(&self) -> ACC_R {
         ACC_R::new(self.bits)

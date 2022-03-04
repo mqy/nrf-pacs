@@ -34,7 +34,7 @@ impl From<crate::W<B1_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `B1` reader - y-intercept of 2nd piece wise linear function"]
+#[doc = "Field `B1` reader - y-intercept of second piecewise linear function"]
 pub struct B1_R(crate::FieldReader<u16, u16>);
 impl B1_R {
     #[inline(always)]
@@ -49,7 +49,7 @@ impl core::ops::Deref for B1_R {
         &self.0
     }
 }
-#[doc = "Field `B1` writer - y-intercept of 2nd piece wise linear function"]
+#[doc = "Field `B1` writer - y-intercept of second piecewise linear function"]
 pub struct B1_W<'a> {
     w: &'a mut W,
 }
@@ -62,14 +62,14 @@ impl<'a> B1_W<'a> {
     }
 }
 impl R {
-    #[doc = "Bits 0:13 - y-intercept of 2nd piece wise linear function"]
+    #[doc = "Bits 0:13 - y-intercept of second piecewise linear function"]
     #[inline(always)]
     pub fn b1(&self) -> B1_R {
         B1_R::new((self.bits & 0x3fff) as u16)
     }
 }
 impl W {
-    #[doc = "Bits 0:13 - y-intercept of 2nd piece wise linear function"]
+    #[doc = "Bits 0:13 - y-intercept of second piecewise linear function"]
     #[inline(always)]
     pub fn b1(&mut self) -> B1_W {
         B1_W { w: self }
@@ -81,7 +81,7 @@ impl W {
         self
     }
 }
-#[doc = "y-intercept of 2nd piece wise linear function\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [b1](index.html) module"]
+#[doc = "y-intercept of second piecewise linear function\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [b1](index.html) module"]
 pub struct B1_SPEC;
 impl crate::RegisterSpec for B1_SPEC {
     type Ux = u32;

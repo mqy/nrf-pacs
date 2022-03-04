@@ -34,7 +34,7 @@ impl From<crate::W<A0_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `A0` reader - Slope of 1st piece wise linear function"]
+#[doc = "Field `A0` reader - Slope of first piecewise linear function"]
 pub struct A0_R(crate::FieldReader<u16, u16>);
 impl A0_R {
     #[inline(always)]
@@ -49,7 +49,7 @@ impl core::ops::Deref for A0_R {
         &self.0
     }
 }
-#[doc = "Field `A0` writer - Slope of 1st piece wise linear function"]
+#[doc = "Field `A0` writer - Slope of first piecewise linear function"]
 pub struct A0_W<'a> {
     w: &'a mut W,
 }
@@ -62,14 +62,14 @@ impl<'a> A0_W<'a> {
     }
 }
 impl R {
-    #[doc = "Bits 0:11 - Slope of 1st piece wise linear function"]
+    #[doc = "Bits 0:11 - Slope of first piecewise linear function"]
     #[inline(always)]
     pub fn a0(&self) -> A0_R {
         A0_R::new((self.bits & 0x0fff) as u16)
     }
 }
 impl W {
-    #[doc = "Bits 0:11 - Slope of 1st piece wise linear function"]
+    #[doc = "Bits 0:11 - Slope of first piecewise linear function"]
     #[inline(always)]
     pub fn a0(&mut self) -> A0_W {
         A0_W { w: self }
@@ -81,7 +81,7 @@ impl W {
         self
     }
 }
-#[doc = "Slope of 1st piece wise linear function\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [a0](index.html) module"]
+#[doc = "Slope of first piecewise linear function\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [a0](index.html) module"]
 pub struct A0_SPEC;
 impl crate::RegisterSpec for A0_SPEC {
     type Ux = u32;

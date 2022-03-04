@@ -34,7 +34,7 @@ impl From<crate::W<SCRATCHPTR_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `SCRATCHPTR` reader - Pointer to a scratch data area used for temporary storage during key-stream generation, MIC generation and encryption/decryption."]
+#[doc = "Field `SCRATCHPTR` reader - Pointer to a scratch data area used for temporary storage during keystream generation, MIC generation and encryption/decryption."]
 pub struct SCRATCHPTR_R(crate::FieldReader<u32, u32>);
 impl SCRATCHPTR_R {
     #[inline(always)]
@@ -49,7 +49,7 @@ impl core::ops::Deref for SCRATCHPTR_R {
         &self.0
     }
 }
-#[doc = "Field `SCRATCHPTR` writer - Pointer to a scratch data area used for temporary storage during key-stream generation, MIC generation and encryption/decryption."]
+#[doc = "Field `SCRATCHPTR` writer - Pointer to a scratch data area used for temporary storage during keystream generation, MIC generation and encryption/decryption."]
 pub struct SCRATCHPTR_W<'a> {
     w: &'a mut W,
 }
@@ -62,14 +62,14 @@ impl<'a> SCRATCHPTR_W<'a> {
     }
 }
 impl R {
-    #[doc = "Bits 0:31 - Pointer to a scratch data area used for temporary storage during key-stream generation, MIC generation and encryption/decryption."]
+    #[doc = "Bits 0:31 - Pointer to a scratch data area used for temporary storage during keystream generation, MIC generation and encryption/decryption."]
     #[inline(always)]
     pub fn scratchptr(&self) -> SCRATCHPTR_R {
         SCRATCHPTR_R::new(self.bits)
     }
 }
 impl W {
-    #[doc = "Bits 0:31 - Pointer to a scratch data area used for temporary storage during key-stream generation, MIC generation and encryption/decryption."]
+    #[doc = "Bits 0:31 - Pointer to a scratch data area used for temporary storage during keystream generation, MIC generation and encryption/decryption."]
     #[inline(always)]
     pub fn scratchptr(&mut self) -> SCRATCHPTR_W {
         SCRATCHPTR_W { w: self }
